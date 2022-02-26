@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="o5_ZqQfMG6_AC3py_4L8zNpFfHVSZ3aj3JEGlB2rN5Y">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link href="css/web.css" rel="stylesheet">
+  <title>Cryptovoxels</title>
+</head>
+
+<body>
+  <div>
+    <div class="WebHeader ">
+      <div class="logo"><a href="/"><img src="images/cv-logo-96.png"></a></div>
+      <header>
+        <nav>
+          <ul>
+            <li><a class="-home " href="/">Explore</a></li>
+            <li><a class="-active" href="/map" class>Map</a></li>
+            <li><a href="/buy" class>Buy Parcels</a></li>
+            <li><a class href="/marketplace">Marketplace</a></li>
+            <li><a class href="https://support.cryptovoxels.com">Support</a></li>
+            <li class="WebSearch"><input type="search" placeholder="Search..."></li>
+          </ul>
+        </nav>
+        <div class="WebTopBar">
+          <ul>
+            <li tabIndex="0" class="" id="btn-signin-popup">
+              <a id="btn-signin"><i class="fi-sign-in"></i> Sign in</a>
+              <div class="dropDown" style="display: none;" id="popup-wallet">
+                <div class="TopBarOverlay -signIn">
+                  <header>
+                    <h2>Choose sign-in provider:</h2><span tabindex="0" class="closeButton" id="close-popup"><i
+                        class="fi-close"></i></span>
+                  </header>
+                  <div>
+                    <div class="WalletProviderChooser">
+                      <div class="provider" id="metamask" tabindex="0" title="Metamask"><img src="https://www.cryptovoxels.com/images/metamask.png"
+                          title="Metamask">
+                        <header>Metamask</header>
+                        <p>install extension</p>
+                      </div>
+                      <div class="provider" id="truswallet" tabindex="0" title="WalletConnect" id="waller-connect"><img src="	https://www.cryptovoxels.com/images/walletconnect.png
+                        "
+                          title="WalletConnect">
+                        <header>WalletConnect</header>
+                        <p>via QR Code</p>
+                      </div>
+                      <div class="provider" id="wallet-link" tabindex="0" title="WalletLink" id="wallet-link"><img src="https://www.cryptovoxels.com/images/walletlink.png"
+                          title="WalletLink">
+                        <header>WalletLink</header>
+                        <p>via QR Code</p>
+                      </div>
+                      <div class="provider" id="facebook" tabindex="0" title="Facebook" id="facebook"><img src="https://www.cryptovoxels.com/images/facebook.png
+                        "
+                          title="Facebook">
+                        <header>Facebook</header>
+                        <p>via Torus</p>
+                      </div>
+                    </div>
+                    <div style="white-space: break-spaces; margin-top: 10px;"><label class="rememberCheckbox"><input
+                          type="checkbox" name="rememberProvider"> <span>Remember choice and sign in
+                          automatically</span></label></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <section>
+      <h1>Map</h1>
+      <p class="sub">Explore the world of Cryptovoxels. Zoom out to see all the islands.</p>
+    </section>
+    <div class="big-map leaflet-container leaflet-fade-anim leaflet-grab leaflet-touch-drag" tabindex="0"
+      style="height: 753px; position: relative;">
+      <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(-215px, 0px, 0px);">
+        <div class="leaflet-pane leaflet-tile-pane">
+          <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+            <div class="leaflet-tile-container leaflet-zoom-animated"
+              style="z-index: 20; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation"
+                src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=63&amp;y=63"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(587px, 120px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=64&amp;y=63"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(843px, 120px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=63&amp;y=64"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(587px, 376px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=64&amp;y=64"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(843px, 376px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=63&amp;y=62"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(587px, -136px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=64&amp;y=62"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(843px, -136px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=62&amp;y=63"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(331px, 120px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=65&amp;y=63"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(1099px, 120px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=62&amp;y=64"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(331px, 376px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=65&amp;y=64"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(1099px, 376px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=63&amp;y=65"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(587px, 632px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=64&amp;y=65"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(843px, 632px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=62&amp;y=62"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(331px, -136px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=65&amp;y=62"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(1099px, -136px, 0px); opacity: 1;"><img
+                alt="" role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=62&amp;y=65"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(331px, 632px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=65&amp;y=65"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(1099px, 632px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=61&amp;y=63"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(75px, 120px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=66&amp;y=63"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(1355px, 120px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=61&amp;y=64"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(75px, 376px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=66&amp;y=64"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(1355px, 376px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=61&amp;y=62"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(75px, -136px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=66&amp;y=62"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(1355px, -136px, 0px); opacity: 1;"><img
+                alt="" role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=61&amp;y=65"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(75px, 632px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=66&amp;y=65"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(1355px, 632px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=60&amp;y=63"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(-181px, 120px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=67&amp;y=63"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(1611px, 120px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=60&amp;y=64"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(-181px, 376px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=67&amp;y=64"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(1611px, 376px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=60&amp;y=62"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(-181px, -136px, 0px); opacity: 1;"><img
+                alt="" role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=67&amp;y=62"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(1611px, -136px, 0px); opacity: 1;"><img
+                alt="" role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=60&amp;y=65"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(-181px, 632px, 0px); opacity: 1;"><img alt=""
+                role="presentation" src="https://a.map.cryptovoxels.com/tile/?z=7&amp;x=67&amp;y=65"
+                class="leaflet-tile leaflet-tile-loaded"
+                style="width: 256px; height: 256px; transform: translate3d(1611px, 632px, 0px); opacity: 1;"></div>
+          </div>
+        </div>
+        <div class="leaflet-pane leaflet-shadow-pane"><img src="	https://www.cryptovoxels.com/icons/mapIcons/gallery_icon_shadow.png"
+            class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -8px; margin-top: -14px; width: 19px; height: 18px; transform: translate3d(1911px, 1326px, 0px);"><img
+            src="	https://www.cryptovoxels.com/icons/mapIcons/gallery_icon_shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -8px; margin-top: -14px; width: 19px; height: 18px; transform: translate3d(1592px, 564px, 0px);"><img
+            src="	https://www.cryptovoxels.com/icons/mapIcons/gallery_icon_shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -8px; margin-top: -14px; width: 19px; height: 18px; transform: translate3d(275px, -325px, 0px);"><img
+            src="	https://www.cryptovoxels.com/icons/mapIcons/gallery_icon_shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -8px; margin-top: -14px; width: 19px; height: 18px; transform: translate3d(878px, -165px, 0px);"><img
+            src="	https://www.cryptovoxels.com/icons/mapIcons/gallery_icon_shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -8px; margin-top: -14px; width: 19px; height: 18px; transform: translate3d(957px, 584px, 0px);"><img
+            src="	https://www.cryptovoxels.com/icons/mapIcons/music_icon_shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -8px; margin-top: -14px; width: 19px; height: 18px; transform: translate3d(1911px, 1075px, 0px);"><img
+            src="	https://www.cryptovoxels.com/icons/mapIcons/concert_icon_shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -8px; margin-top: -14px; width: 19px; height: 18px; transform: translate3d(869px, 34px, 0px);"><img
+            src="	https://www.cryptovoxels.com/icons/mapIcons/concert_icon_shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -8px; margin-top: -14px; width: 19px; height: 18px; transform: translate3d(539px, 447px, 0px);"><img
+            src="	https://www.cryptovoxels.com/icons/mapIcons/food_icon_shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -8px; margin-top: -14px; width: 19px; height: 18px; transform: translate3d(1974px, 1274px, 0px);"><img
+            src="	https://www.cryptovoxels.com/icons/mapIcons/sandbox_icon_shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -8px; margin-top: -14px; width: 19px; height: 18px; transform: translate3d(-277px, 1368px, 0px);"><img
+            src="	https://www.cryptovoxels.com/icons/mapIcons/sandbox_icon_shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -8px; margin-top: -14px; width: 19px; height: 18px; transform: translate3d(663px, 750px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(2139px, -774px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(2140px, -773px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(2140px, -773px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(246px, 77px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(1484px, 956px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-4160px, -1364px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(1756px, 704px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(1482px, 954px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(1484px, 957px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(1483px, 960px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-404px, 1400px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-404px, 1400px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-564px, 1439px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(2134px, -765px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(2133px, -763px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(1487px, 953px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(1760px, 703px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-416px, 1396px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-406px, 1396px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-405px, 1400px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(265px, -34px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(2498px, -779px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(1760px, 703px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(1761px, 704px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(843px, 373px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-463px, 1383px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(2175px, 1470px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-570px, 1531px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-266px, 1354px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(931px, 616px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(931px, 616px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(264px, -34px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-416px, 1396px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(2501px, -785px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(2530px, -645px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(2527px, -649px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(2162px, 1473px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(2174px, 1472px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-569px, 1509px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-4163px, -1377px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-4215px, -1351px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-425px, 1411px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-409px, 1406px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(2135px, -774px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(-568px, 1437px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(469px, 591px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(448px, 580px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(448px, 582px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(453px, 564px, 0px);"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+            style="margin-left: -16px; margin-top: -30px; width: 33px; height: 33px; transform: translate3d(439px, 561px, 0px);">
+        </div>
+        <div class="leaflet-pane leaflet-overlay-pane"><canvas class="leaflet-zoom-animated" width="2510" height="1506"
+            style="transform: translate3d(-412px, -376px, 0px); width: 2510px; height: 1506px;"></canvas><canvas
+            class="leaflet-zoom-animated" width="1506" height="904"
+            style="transform: translate3d(90px, -75px, 0px); width: 1506px; height: 904px;"></canvas></div>
+        <div class="leaflet-pane leaflet-marker-pane">
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(2290px, -560px, 0px); z-index: -560;">
+            <div><i class="map-icon gallery"></i><br><span><b>3</b></span></div>
+          </div><img src="	https://www.cryptovoxels.com/icons/mapIcons/gallery_icon.png" class="leaflet-marker-icon leaflet-zoom-animated"
+            title="This parcel is a gallery!" alt="" tabindex="0"
+            style="margin-left: -8px; margin-top: -14px; width: 18px; height: 17px; transform: translate3d(1911px, 1326px, 0px); z-index: 1326;"><img
+            src="	https://www.cryptovoxels.com/icons/mapIcons/gallery_icon.png" class="leaflet-marker-icon leaflet-zoom-animated"
+            title="This parcel is a gallery!" alt="" tabindex="0"
+            style="margin-left: -8px; margin-top: -14px; width: 18px; height: 17px; transform: translate3d(1592px, 564px, 0px); z-index: 564;"><img
+            src="	https://www.cryptovoxels.com/icons/mapIcons/gallery_icon.png" class="leaflet-marker-icon leaflet-zoom-animated"
+            title="This parcel is a gallery!" alt="" tabindex="0"
+            style="margin-left: -8px; margin-top: -14px; width: 18px; height: 17px; transform: translate3d(275px, -325px, 0px); z-index: -325;"><img
+            src="	https://www.cryptovoxels.com/icons/mapIcons/gallery_icon.png" class="leaflet-marker-icon leaflet-zoom-animated"
+            title="This parcel is a gallery!" alt="" tabindex="0"
+            style="margin-left: -8px; margin-top: -14px; width: 18px; height: 17px; transform: translate3d(878px, -165px, 0px); z-index: -165;">
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(933px, -203px, 0px); z-index: -203;">
+            <div><i class="map-icon gallery"></i><br><span><b>2</b></span></div>
+          </div><img src="	https://www.cryptovoxels.com/icons/mapIcons/gallery_icon.png" class="leaflet-marker-icon leaflet-zoom-animated"
+            title="This parcel is a gallery!" alt="" tabindex="0"
+            style="margin-left: -8px; margin-top: -14px; width: 18px; height: 17px; transform: translate3d(957px, 584px, 0px); z-index: 584;">
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(710px, -7px, 0px); z-index: -7;">
+            <div><i class="map-icon club"></i><br><span><b>2</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1487px, -63px, 0px); z-index: -63;">
+            <div><i class="map-icon club"></i><br><span><b>14</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(165px, 965px, 0px); z-index: 965;">
+            <div><i class="map-icon library"></i><br><span><b>3</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1433px, 21px, 0px); z-index: 21;">
+            <div><i class="map-icon gallery"></i><br><span><b>7</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(-467px, 1490px, 0px); z-index: 1490;">
+            <div><i class="map-icon gallery"></i><br><span><b>11</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(2208px, -750px, 0px); z-index: -750;">
+            <div><i class="map-icon club"></i><br><span><b>3</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1155px, 804px, 0px); z-index: 804;">
+            <div><i class="map-icon gallery"></i><br><span><b>4</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(873px, 903px, 0px); z-index: 903;">
+            <div><i class="map-icon gallery"></i><br><span><b>14</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(209px, 915px, 0px); z-index: 915;">
+            <div><i class="map-icon club"></i><br><span><b>10</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(331px, 961px, 0px); z-index: 961;">
+            <div><i class="map-icon gallery"></i><br><span><b>5</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(161px, 249px, 0px); z-index: 249;">
+            <div><i class="map-icon gallery"></i><br><span><b>4</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(-553px, 1360px, 0px); z-index: 1360;">
+            <div><i class="map-icon gallery"></i><br><span><b>6</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(2385px, -706px, 0px); z-index: -706;">
+            <div><i class="map-icon beach"></i><br><span><b>2</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(469px, 688px, 0px); z-index: 688;">
+            <div><i class="map-icon park"></i><br><span><b>6</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1252px, 136px, 0px); z-index: 136;">
+            <div><i class="map-icon gallery"></i><br><span><b>4</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1970px, 1355px, 0px); z-index: 1355;">
+            <div><i class="map-icon club"></i><br><span><b>10</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(2221px, -569px, 0px); z-index: -569;">
+            <div><i class="map-icon gallery"></i><br><span><b>3</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(180px, 313px, 0px); z-index: 313;">
+            <div><i class="map-icon gallery"></i><br><span><b>9</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(2291px, -670px, 0px); z-index: -670;">
+            <div><i class="map-icon gallery"></i><br><span><b>3</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(2454px, -615px, 0px); z-index: -615;">
+            <div><i class="map-icon gallery"></i><br><span><b>12</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(-525px, 1409px, 0px); z-index: 1409;">
+            <div><i class="map-icon club"></i><br><span><b>4</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(764px, 484px, 0px); z-index: 484;">
+            <div><i class="map-icon animal"></i><br><span><b>5</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(-559px, 1491px, 0px); z-index: 1491;">
+            <div><i class="map-icon education"></i><br><span><b>2</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(783px, -37px, 0px); z-index: -37;">
+            <div><i class="map-icon education"></i><br><span><b>2</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(2164px, 1449px, 0px); z-index: 1449;">
+            <div><i class="map-icon game"></i><br><span><b>6</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1263px, 401px, 0px); z-index: 401;">
+            <div><i class="map-icon park"></i><br><span><b>3</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(918px, 475px, 0px); z-index: 475;">
+            <div><i class="map-icon music"></i><br><span><b>15</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(-338px, 1321px, 0px); z-index: 1321;">
+            <div><i class="map-icon gallery"></i><br><span><b>5</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(-325px, 1477px, 0px); z-index: 1477;">
+            <div><i class="map-icon gallery"></i><br><span><b>5</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1582px, -181px, 0px); z-index: -181;">
+            <div><i class="map-icon music"></i><br><span><b>3</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1825px, 1055px, 0px); z-index: 1055;">
+            <div><i class="map-icon music"></i><br><span><b>4</b></span></div>
+          </div><img src="	https://www.cryptovoxels.com/icons/mapIcons/music_icon.png" class="leaflet-marker-icon leaflet-zoom-animated"
+            title="This parcel is a music!" alt="" tabindex="0"
+            style="margin-left: -8px; margin-top: -14px; width: 18px; height: 17px; transform: translate3d(1911px, 1075px, 0px); z-index: 1075;">
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(566px, 256px, 0px); z-index: 256;">
+            <div><i class="map-icon gallery"></i><br><span><b>3</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(918px, -33px, 0px); z-index: -33;">
+            <div><i class="map-icon money"></i><br><span><b>10</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1776px, 732px, 0px); z-index: 732;">
+            <div><i class="map-icon gallery"></i><br><span><b>16</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(2095px, 1469px, 0px); z-index: 1469;">
+            <div><i class="map-icon money"></i><br><span><b>6</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1729px, 379px, 0px); z-index: 379;">
+            <div><i class="map-icon money"></i><br><span><b>5</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1126px, 361px, 0px); z-index: 361;">
+            <div><i class="map-icon gallery"></i><br><span><b>6</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(-397px, 1399px, 0px); z-index: 1399;">
+            <div><i class="map-icon gallery"></i><br><span><b>8</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(457px, 277px, 0px); z-index: 277;">
+            <div><i class="map-icon concert"></i><br><span><b>7</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1255px, 225px, 0px); z-index: 225;">
+            <div><i class="map-icon concert"></i><br><span><b>3</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1028px, 492px, 0px); z-index: 492;">
+            <div><i class="map-icon music"></i><br><span><b>5</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(508px, 383px, 0px); z-index: 383;">
+            <div><i class="map-icon money"></i><br><span><b>3</b></span></div>
+          </div><img src="	https://www.cryptovoxels.com/icons/mapIcons/concert_icon.png" class="leaflet-marker-icon leaflet-zoom-animated"
+            title="This parcel is a concert!" alt="" tabindex="0"
+            style="margin-left: -8px; margin-top: -14px; width: 18px; height: 17px; transform: translate3d(869px, 34px, 0px); z-index: 34;"><img
+            src="	https://www.cryptovoxels.com/icons/mapIcons/concert_icon.png" class="leaflet-marker-icon leaflet-zoom-animated"
+            title="This parcel is a concert!" alt="" tabindex="0"
+            style="margin-left: -8px; margin-top: -14px; width: 18px; height: 17px; transform: translate3d(539px, 447px, 0px); z-index: 447;">
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(956px, 257px, 0px); z-index: 257;">
+            <div><i class="map-icon shops"></i><br><span><b>11</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1029px, 341px, 0px); z-index: 341;">
+            <div><i class="map-icon gallery"></i><br><span><b>15</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1186px, 455px, 0px); z-index: 455;">
+            <div><i class="map-icon gallery"></i><br><span><b>11</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1231px, 314px, 0px); z-index: 314;">
+            <div><i class="map-icon gallery"></i><br><span><b>12</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1176px, 710px, 0px); z-index: 710;">
+            <div><i class="map-icon game"></i><br><span><b>9</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(264px, -24px, 0px); z-index: -24;">
+            <div><i class="map-icon gallery"></i><br><span><b>17</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1623px, 461px, 0px); z-index: 461;">
+            <div><i class="map-icon money"></i><br><span><b>11</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1381px, 35px, 0px); z-index: 35;">
+            <div><i class="map-icon club"></i><br><span><b>3</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(852px, 515px, 0px); z-index: 515;">
+            <div><i class="map-icon concert"></i><br><span><b>7</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(327px, 1037px, 0px); z-index: 1037;">
+            <div><i class="map-icon food"></i><br><span><b>3</b></span></div>
+          </div><img src="	https://www.cryptovoxels.com/icons/mapIcons/food_icon.png" class="leaflet-marker-icon leaflet-zoom-animated"
+            title="This parcel is a food!" alt="" tabindex="0"
+            style="margin-left: -8px; margin-top: -14px; width: 18px; height: 17px; transform: translate3d(1974px, 1274px, 0px); z-index: 1274;">
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(813px, 282px, 0px); z-index: 282;">
+            <div><i class="map-icon gallery"></i><br><span><b>12</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(923px, 404px, 0px); z-index: 404;">
+            <div><i class="map-icon gallery"></i><br><span><b>9</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(830px, 190px, 0px); z-index: 190;">
+            <div><i class="map-icon scenic"></i><br><span><b>11</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(656px, 614px, 0px); z-index: 614;">
+            <div><i class="map-icon sports"></i><br><span><b>10</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1034px, 132px, 0px); z-index: 132;">
+            <div><i class="map-icon animal"></i><br><span><b>17</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1029px, 706px, 0px); z-index: 706;">
+            <div><i class="map-icon gallery"></i><br><span><b>12</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1152px, 232px, 0px); z-index: 232;">
+            <div><i class="map-icon gallery"></i><br><span><b>13</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1062px, 60px, 0px); z-index: 60;">
+            <div><i class="map-icon gallery"></i><br><span><b>14</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(784px, 777px, 0px); z-index: 777;">
+            <div><i class="map-icon gallery"></i><br><span><b>10</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1258px, 500px, 0px); z-index: 500;">
+            <div><i class="map-icon gallery"></i><br><span><b>6</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1054px, -30px, 0px); z-index: -30;">
+            <div><i class="map-icon gallery"></i><br><span><b>14</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1062px, 794px, 0px); z-index: 794;">
+            <div><i class="map-icon theater"></i><br><span><b>9</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1209px, -20px, 0px); z-index: -20;">
+            <div><i class="map-icon sports"></i><br><span><b>13</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(627px, -155px, 0px); z-index: -155;">
+            <div><i class="map-icon gallery"></i><br><span><b>12</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(274px, 1009px, 0px); z-index: 1009;">
+            <div><i class="map-icon gallery"></i><br><span><b>6</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1525px, -141px, 0px); z-index: -141;">
+            <div><i class="map-icon gallery"></i><br><span><b>8</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1555px, 1px, 0px); z-index: 1;">
+            <div><i class="map-icon gallery"></i><br><span><b>9</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(180px, 52px, 0px); z-index: 52;">
+            <div><i class="map-icon money"></i><br><span><b>33</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(254px, 123px, 0px); z-index: 123;">
+            <div><i class="map-icon money"></i><br><span><b>23</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1717px, 456px, 0px); z-index: 456;">
+            <div><i class="map-icon game"></i><br><span><b>39</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1803px, 458px, 0px); z-index: 458;">
+            <div><i class="map-icon money"></i><br><span><b>18</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1754px, 571px, 0px); z-index: 571;">
+            <div><i class="map-icon gallery"></i><br><span><b>10</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1886px, 1172px, 0px); z-index: 1172;">
+            <div><i class="map-icon gallery"></i><br><span><b>14</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(2542px, -667px, 0px); z-index: -667;">
+            <div><i class="map-icon theater"></i><br><span><b>5</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(537px, 77px, 0px); z-index: 77;">
+            <div><i class="map-icon theater"></i><br><span><b>9</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(127px, 389px, 0px); z-index: 389;">
+            <div><i class="map-icon library"></i><br><span><b>4</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1228px, 595px, 0px); z-index: 595;">
+            <div><i class="map-icon theater"></i><br><span><b>10</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(843px, 116px, 0px); z-index: 116;">
+            <div><i class="map-icon scenic"></i><br><span><b>7</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1816px, 1259px, 0px); z-index: 1259;">
+            <div><i class="map-icon theater"></i><br><span><b>2</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(478px, -5px, 0px); z-index: -5;">
+            <div><i class="map-icon theater"></i><br><span><b>2</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(711px, 338px, 0px); z-index: 338;">
+            <div><i class="map-icon park"></i><br><span><b>10</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(646px, 445px, 0px); z-index: 445;">
+            <div><i class="map-icon gallery"></i><br><span><b>14</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(614px, 295px, 0px); z-index: 295;">
+            <div><i class="map-icon gallery"></i><br><span><b>16</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(695px, 174px, 0px); z-index: 174;">
+            <div><i class="map-icon gallery"></i><br><span><b>19</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(877px, 656px, 0px); z-index: 656;">
+            <div><i class="map-icon sandbox"></i><br><span><b>11</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1073px, 564px, 0px); z-index: 564;">
+            <div><i class="map-icon gallery"></i><br><span><b>11</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(786px, 662px, 0px); z-index: 662;">
+            <div><i class="map-icon sandbox"></i><br><span><b>8</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(593px, 175px, 0px); z-index: 175;">
+            <div><i class="map-icon gallery"></i><br><span><b>5</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(764px, 62px, 0px); z-index: 62;">
+            <div><i class="map-icon gallery"></i><br><span><b>12</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(572px, 545px, 0px); z-index: 545;">
+            <div><i class="map-icon gallery"></i><br><span><b>12</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1168px, 44px, 0px); z-index: 44;">
+            <div><i class="map-icon sports"></i><br><span><b>18</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(557px, 700px, 0px); z-index: 700;">
+            <div><i class="map-icon sandbox"></i><br><span><b>5</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(612px, -33px, 0px); z-index: -33;">
+            <div><i class="map-icon scenic"></i><br><span><b>9</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1536px, 305px, 0px); z-index: 305;">
+            <div><i class="map-icon sandbox"></i><br><span><b>15</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1433px, 639px, 0px); z-index: 639;">
+            <div><i class="map-icon scenic"></i><br><span><b>33</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(775px, -218px, 0px); z-index: -218;">
+            <div><i class="map-icon sandbox"></i><br><span><b>11</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1034px, -154px, 0px); z-index: -154;">
+            <div><i class="map-icon gallery"></i><br><span><b>11</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(534px, 984px, 0px); z-index: 984;">
+            <div><i class="map-icon gallery"></i><br><span><b>9</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(604px, 928px, 0px); z-index: 928;">
+            <div><i class="map-icon gallery"></i><br><span><b>9</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(451px, 931px, 0px); z-index: 931;">
+            <div><i class="map-icon sandbox"></i><br><span><b>8</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1476px, 1024px, 0px); z-index: 1024;">
+            <div><i class="map-icon gallery"></i><br><span><b>26</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(204px, -267px, 0px); z-index: -267;">
+            <div><i class="map-icon theater"></i><br><span><b>19</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1596px, 828px, 0px); z-index: 828;">
+            <div><i class="map-icon sandbox"></i><br><span><b>27</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(466px, 430px, 0px); z-index: 430;">
+            <div><i class="map-icon sandbox"></i><br><span><b>8</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1182px, -180px, 0px); z-index: -180;">
+            <div><i class="map-icon sandbox"></i><br><span><b>7</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(485px, 590px, 0px); z-index: 590;">
+            <div><i class="map-icon teleports"></i><br><span><b>4</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(779px, 898px, 0px); z-index: 898;">
+            <div><i class="map-icon sandbox"></i><br><span><b>3</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1448px, 755px, 0px); z-index: 755;">
+            <div><i class="map-icon sandbox"></i><br><span><b>8</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1385px, -127px, 0px); z-index: -127;">
+            <div><i class="map-icon sports"></i><br><span><b>8</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(276px, 493px, 0px); z-index: 493;">
+            <div><i class="map-icon sandbox"></i><br><span><b>12</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(629px, 91px, 0px); z-index: 91;">
+            <div><i class="map-icon park"></i><br><span><b>8</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(873px, 771px, 0px); z-index: 771;">
+            <div><i class="map-icon beach"></i><br><span><b>9</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(131px, 146px, 0px); z-index: 146;">
+            <div><i class="map-icon money"></i><br><span><b>14</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(144px, -33px, 0px); z-index: -33;">
+            <div><i class="map-icon money"></i><br><span><b>11</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(563px, 803px, 0px); z-index: 803;">
+            <div><i class="map-icon theater"></i><br><span><b>5</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(697px, 516px, 0px); z-index: 516;">
+            <div><i class="map-icon theater"></i><br><span><b>6</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(457px, 544px, 0px); z-index: 544;">
+            <div><i class="map-icon sandbox"></i><br><span><b>3</b></span></div>
+          </div><img src="	https://www.cryptovoxels.com/icons/mapIcons/sandbox_icon.png" class="leaflet-marker-icon leaflet-zoom-animated"
+            title="This parcel is a sandbox!" alt="" tabindex="0"
+            style="margin-left: -8px; margin-top: -14px; width: 18px; height: 17px; transform: translate3d(-277px, 1368px, 0px); z-index: 1368;">
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1235px, -140px, 0px); z-index: -140;">
+            <div><i class="map-icon sandbox"></i><br><span><b>2</b></span></div>
+          </div><img src="	https://www.cryptovoxels.com/icons/mapIcons/sandbox_icon.png" class="leaflet-marker-icon leaflet-zoom-animated"
+            title="This parcel is a sandbox!" alt="" tabindex="0"
+            style="margin-left: -8px; margin-top: -14px; width: 18px; height: 17px; transform: translate3d(663px, 750px, 0px); z-index: 750;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 5 Hunga cordata Street" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(2139px, -774px, 0px); z-index: -774;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 5 Hunga cordata Street" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(2140px, -773px, 0px); z-index: -773;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 5 Hunga cordata Street" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(2140px, -773px, 0px); z-index: -773;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 2 ATH Gardens" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(246px, 77px, 0px); z-index: 77;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 3 Rāwhitiroa" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(1484px, 956px, 0px); z-index: 956;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 6 Sancho Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-4160px, -1364px, 0px); z-index: -1364;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 3 船町" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(1756px, 704px, 0px); z-index: 704;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 3 Rāwhitiroa" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(1482px, 954px, 0px); z-index: 954;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 3 Rāwhitiroa" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(1484px, 957px, 0px); z-index: 957;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 3 Rāwhitiroa" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(1483px, 960px, 0px); z-index: 960;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 61 Diamond Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-404px, 1400px, 0px); z-index: 1400;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 61 Diamond Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-404px, 1400px, 0px); z-index: 1400;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 3 Apophyllite Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-564px, 1439px, 0px); z-index: 1439;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 5 Hunga cordata Street" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(2134px, -765px, 0px); z-index: -765;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 5 Hunga cordata Street" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(2133px, -763px, 0px); z-index: -763;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 3 Rāwhitiroa" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(1487px, 953px, 0px); z-index: 953;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 3 船町" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(1760px, 703px, 0px); z-index: 703;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 59 Diamond Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-416px, 1396px, 0px); z-index: 1396;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 61 Diamond Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-406px, 1396px, 0px); z-index: 1396;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 71 Diamond Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-405px, 1400px, 0px); z-index: 1400;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 11 FUD Fork" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(265px, -34px, 0px); z-index: -34;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 3 Pastilla dacuna Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(2498px, -779px, 0px); z-index: -779;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 3 船町" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(1760px, 703px, 0px); z-index: 703;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 3 船町" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(1761px, 704px, 0px); z-index: 704;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 74 Block Fork" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(843px, 373px, 0px); z-index: 373;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 3 Diadochite Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-463px, 1383px, 0px); z-index: 1383;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 5 Leleaka Ave" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(2175px, 1470px, 0px); z-index: 1470;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 19 Arsenopyrite Ave" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-570px, 1531px, 0px); z-index: 1531;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 2 Euchroite Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-266px, 1354px, 0px); z-index: 1354;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 1 Feature Garden" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(931px, 616px, 0px); z-index: 616;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 1 Feature Garden" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(931px, 616px, 0px); z-index: 616;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 11 FUD Fork" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(264px, -34px, 0px); z-index: -34;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 59 Diamond Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-416px, 1396px, 0px); z-index: 1396;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 3 Pastilla dacuna Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(2501px, -785px, 0px); z-index: -785;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 2 Red Wolf Street" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(2530px, -645px, 0px); z-index: -645;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 2 Red Wolf Street" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(2527px, -649px, 0px); z-index: -649;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 11 Ahiu Street" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(2162px, 1473px, 0px); z-index: 1473;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 5 Leleaka Ave" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(2174px, 1472px, 0px); z-index: 1472;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 19 Arsenopyrite Ave" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-569px, 1509px, 0px); z-index: 1509;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 6 Sancho Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-4163px, -1377px, 0px); z-index: -1377;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 7 Abol Drive" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-4215px, -1351px, 0px); z-index: -1351;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 2 Fault Line" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-425px, 1411px, 0px); z-index: 1411;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 71 Diamond Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-409px, 1406px, 0px); z-index: 1406;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 5 Hunga cordata Street" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(2135px, -774px, 0px); z-index: -774;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 3 Apophyllite Road" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(-568px, 1437px, 0px); z-index: 1437;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 22 Leo Court" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(469px, 591px, 0px); z-index: 591;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 27 Leo Court" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(448px, 580px, 0px); z-index: 580;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 27 Leo Court" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(448px, 582px, 0px); z-index: 582;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 2 Gate Bypass" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(453px, 564px, 0px); z-index: 564;"><img
+            src="	https://www.cryptovoxels.com/images/camera-transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Womp near 2 Gate Bypass" alt="" tabindex="0"
+            style="margin-left: -16px; margin-top: -30px; width: 32px; height: 32px; transform: translate3d(439px, 561px, 0px); z-index: 561;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(966px, 747px, 0px); z-index: 747;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="METABRGE" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(1257px, 376px, 0px); z-index: 376;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="YiYiYi" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(1888px, 1169px, 0px); z-index: 1169;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="JCBC1"
+            alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(1954px, 1394px, 0px); z-index: 1394;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Front7767" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(98px, -46px, 0px); z-index: -46;">
+          <div class="leaflet-marker-icon MarkersClusters -avatar leaflet-zoom-animated leaflet-interactive"
+            tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(177px, -215px, 0px); z-index: -215;">
+            <div><i class="fi-user"></i><br><span><b>2</b></span></div>
+          </div><img src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="JUNJUN" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(688px, 787px, 0px); z-index: 787;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="RGBanksy" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(616px, 682px, 0px); z-index: 682;">
+          <div class="leaflet-marker-icon MarkersClusters -avatar leaflet-zoom-animated leaflet-interactive"
+            tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(563px, 573px, 0px); z-index: 573;">
+            <div><i class="fi-user"></i><br><span><b>2</b></span></div>
+          </div><img src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="JUNJUN" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(2262px, -716px, 0px); z-index: -716;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(1557px, -133px, 0px); z-index: -133;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(1575px, -33px, 0px); z-index: -33;">
+          <div class="leaflet-marker-icon MarkersClusters -avatar leaflet-zoom-animated leaflet-interactive"
+            tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1478px, 0px, 0px); z-index: 0;">
+            <div><i class="fi-user"></i><br><span><b>2</b></span></div>
+          </div><img src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="RGBanksy" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(843px, 24px, 0px); z-index: 24;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(1083px, 6px, 0px); z-index: 6;">
+          <div class="leaflet-marker-icon MarkersClusters -avatar leaflet-zoom-animated leaflet-interactive"
+            tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(437px, 525px, 0px); z-index: 525;">
+            <div><i class="fi-user"></i><br><span><b>2</b></span></div>
+          </div><img src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(184px, 415px, 0px); z-index: 415;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Mighty33" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(249px, 512px, 0px); z-index: 512;">
+          <div class="leaflet-marker-icon MarkersClusters -avatar leaflet-zoom-animated leaflet-interactive"
+            tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(-337px, 1376px, 0px); z-index: 1376;">
+            <div><i class="fi-user"></i><br><span><b>7</b></span></div>
+          </div><img src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="guttersam.eth" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(-497px, 1501px, 0px); z-index: 1501;">
+          <div class="leaflet-marker-icon MarkersClusters -avatar leaflet-zoom-animated leaflet-interactive"
+            tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(-540px, 1440px, 0px); z-index: 1440;">
+            <div><i class="fi-user"></i><br><span><b>3</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters -avatar leaflet-zoom-animated leaflet-interactive"
+            tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(-487px, 1367px, 0px); z-index: 1367;">
+            <div><i class="fi-user"></i><br><span><b>5</b></span></div>
+          </div><img src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(2235px, -522px, 0px); z-index: -522;">
+          <div class="leaflet-marker-icon MarkersClusters -avatar leaflet-zoom-animated leaflet-interactive"
+            tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(2425px, -733px, 0px); z-index: -733;">
+            <div><i class="fi-user"></i><br><span><b>6</b></span></div>
+          </div><img src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="MMT_muni_" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(2423px, -554px, 0px); z-index: -554;">
+          <div class="leaflet-marker-icon MarkersClusters -avatar leaflet-zoom-animated leaflet-interactive"
+            tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(2528px, -648px, 0px); z-index: -648;">
+            <div><i class="fi-user"></i><br><span><b>2</b></span></div>
+          </div><img src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(1498px, 624px, 0px); z-index: 624;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Radical7" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(1838px, 716px, 0px); z-index: 716;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(1751px, 704px, 0px); z-index: 704;">
+          <div class="leaflet-marker-icon MarkersClusters -avatar leaflet-zoom-animated leaflet-interactive"
+            tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1635px, 840px, 0px); z-index: 840;">
+            <div><i class="fi-user"></i><br><span><b>5</b></span></div>
+          </div><img src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Skumpii" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(1786px, 484px, 0px); z-index: 484;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(1606px, 455px, 0px); z-index: 455;">
+          <div class="leaflet-marker-icon MarkersClusters -avatar leaflet-zoom-animated leaflet-interactive"
+            tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(1683px, 388px, 0px); z-index: 388;">
+            <div><i class="fi-user"></i><br><span><b>6</b></span></div>
+          </div><img src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(1065px, 481px, 0px); z-index: 481;">
+          <div class="leaflet-marker-icon MarkersClusters -avatar leaflet-zoom-animated leaflet-interactive"
+            tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(943px, 363px, 0px); z-index: 363;">
+            <div><i class="fi-user"></i><br><span><b>2</b></span></div>
+          </div>
+          <div class="leaflet-marker-icon MarkersClusters -avatar leaflet-zoom-animated leaflet-interactive"
+            tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(844px, 375px, 0px); z-index: 375;">
+            <div><i class="fi-user"></i><br><span><b>35</b></span></div>
+          </div><img src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(581px, 22px, 0px); z-index: 22;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(112px, 46px, 0px); z-index: 46;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(267px, -46px, 0px); z-index: -46;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="PurpLeTariat" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(247px, 81px, 0px); z-index: 81;">
+          <div class="leaflet-marker-icon MarkersClusters -avatar leaflet-zoom-animated leaflet-interactive"
+            tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(469px, 211px, 0px); z-index: 211;">
+            <div><i class="fi-user"></i><br><span><b>4</b></span></div>
+          </div><img src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(496px, 906px, 0px); z-index: 906;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="0xf99eb53b" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(195px, 904px, 0px); z-index: 904;"><img
+            src="/images/marker.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+            title="Anonymous" alt="" tabindex="0"
+            style="margin-left: -6px; margin-top: -7px; width: 12px; height: 14px; transform: translate3d(277px, 985px, 0px); z-index: 985;">
+          <div class="leaflet-marker-icon MarkersClusters leaflet-zoom-animated leaflet-interactive" tabindex="0"
+            style="margin-left: -6px; margin-top: -6px; width: 12px; height: 12px; transform: translate3d(2500px, -768px, 0px); z-index: -768;">
+            <div><i class="map-icon park"></i><br><span><b>2</b></span></div>
+          </div>
+        </div>
+        <div class="leaflet-pane leaflet-tooltip-pane"></div>
+        <div class="leaflet-pane leaflet-popup-pane"></div>
+        <div class="leaflet-proxy leaflet-zoom-animated"
+          style="transform: translate3d(16383.5px, 16384.5px, 0px) scale(64);"></div>
+      </div>
+      <div class="leaflet-control-container">
+        <div class="leaflet-top leaflet-left">
+          <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#"
+              title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#"
+              title="Zoom out" role="button" aria-label="Zoom out">−</a></div>
+        </div>
+        <div class="leaflet-top leaflet-right">
+          <div class="leaflet-control-layers leaflet-control-layers-expanded leaflet-control" aria-haspopup="true"><a
+              class="leaflet-control-layers-toggle" href="#" title="Layers"></a>
+            <section class="leaflet-control-layers-list">
+              <div class="leaflet-control-layers-base"></div>
+              <div class="leaflet-control-layers-separator" style="display: none;"></div>
+              <div class="leaflet-control-layers-overlays"><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon gallery"></i> gallery - <small>436</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon club"></i> club - <small>68</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon bar"></i> bar - <small>9</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon teleports"></i> teleports - <small>38</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon library"></i> library - <small>13</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon park"></i> park - <small>59</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon animal"></i> animal - <small>24</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon shops"></i> shops - <small>47</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon scenic"></i> scenic - <small>38</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon beach"></i> beach - <small>45</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon factory"></i> factory - <small>15</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon sports"></i> sports - <small>47</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon rest"></i> rest - <small>42</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon education"></i> education - <small>26</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon game"></i> game - <small>29</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon music"></i> music - <small>33</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon money"></i> money - <small>90</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon concert"></i> concert - <small>35</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon food"></i> food - <small>26</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon theater"></i> theater - <small>80</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon sandbox"></i> sandbox - <small>91</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon womp"></i> latest Womps</span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon sale"></i> On Sale - <small>0</small></span></div>
+                </label><label>
+                  <div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> <i
+                        class="map-icon avatar"></i> Avatars</span></div>
+                </label></div><button class="closeControl">Close</button>
+            </section>
+          </div>
+        </div>
+        <div class="leaflet-bottom leaflet-left"></div>
+        <div class="leaflet-bottom leaflet-right">
+          <div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com"
+              title="A JS library for interactive maps">Leaflet</a> | Map data © Cryptovoxels</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="js/babylon.js"></script>
+<script async src="js/leaflet.js"></script>
+<script async src="js/babylon.gui.min.js"></script>
+<script async src="js/babylonjs.materials.min.js"></script>
+<script async src="js/babylonjs.loaders.min.js"></script>
+<!-- <script src="js/web-19435.js"></script> -->
+<script async src="torus-embed"></script>
+
+<script src="js/script.js" data-site="AGDDHJCW" data-spa="auto"></script>
+
+<!-- javascript for automatic buy modal -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11" async></script>
+
+<script src="/js/main.js"></script>
+</html>

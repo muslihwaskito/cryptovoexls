@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="o5_ZqQfMG6_AC3py_4L8zNpFfHVSZ3aj3JEGlB2rN5Y">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link href="css/web.css" rel="stylesheet">
+  <title>Cryptovoxels - Ethereum Virtual World</title>
+  <meta property="og:title" content="A blockchain virtual world and metaverse">
+  <meta property="og:type" content="website">
+  <meta name="google-site-verification" content="ZtDCZ-0uq9DiTDQy8QKJdkMOCuWXyia2-K0XBQE3lSo">
+  <meta name="fortmatic-site-verification" content="yXUDShUM23KlWBfo">
+</head>
+
+<body>
+  <div>
+    <div class="WebHeader ">
+      <div class="logo"><a href="/"><img src="images/cv-logo-96.png"></a></div>
+      <header>
+        <nav>
+          <ul>
+            <li><a class="-home -active" href="/">Explore</a></li>
+            <li><a href="/map" class>Map</a></li>
+            <li><a href="/buy" class>Buy Parcels</a></li>
+            <li><a class href="/marketplace">Marketplace</a></li>
+            <li><a class href="https://support.cryptovoxels.com">Support</a></li>
+            <li class="WebSearch"><input type="search" placeholder="Search..."></li>
+          </ul>
+        </nav>
+        <div class="WebTopBar">
+          <ul>
+            <li tabIndex="0" class="" id="btn-signin-popup">
+              <a id="btn-signin"><i class="fi-sign-in"></i> Sign in</a>
+              <div class="dropDown" style="display: none;" id="popup-wallet">
+                <div class="TopBarOverlay -signIn">
+                  <header>
+                    <h2>Choose sign-in provider:</h2><span tabindex="0" class="closeButton" id="close-popup"><i
+                        class="fi-close"></i></span>
+                  </header>
+                  <div>
+                    <div class="WalletProviderChooser">
+                      <div class="provider" id="metamask" tabindex="0" title="Metamask"><img src="https://www.cryptovoxels.com/images/metamask.png"
+                          title="Metamask">
+                        <header>Metamask</header>
+                        <p>install extension</p>
+                      </div>
+                      <div class="provider" id="truswallet" tabindex="0" title="WalletConnect" id="waller-connect"><img src="	https://www.cryptovoxels.com/images/walletconnect.png
+                        "
+                          title="WalletConnect">
+                        <header>WalletConnect</header>
+                        <p>via QR Code</p>
+                      </div>
+                      <div class="provider" id="wallet-link" tabindex="0" title="WalletLink" id="wallet-link"><img src="https://www.cryptovoxels.com/images/walletlink.png"
+                          title="WalletLink">
+                        <header>WalletLink</header>
+                        <p>via QR Code</p>
+                      </div>
+                      <div class="provider" id="facebook" tabindex="0" title="Facebook" id="facebook"><img src="https://www.cryptovoxels.com/images/facebook.png
+                        "
+                          title="Facebook">
+                        <header>Facebook</header>
+                        <p>via Torus</p>
+                      </div>
+                    </div>
+                    <div style="white-space: break-spaces; margin-top: 10px;"><label class="rememberCheckbox"><input
+                          type="checkbox" name="rememberProvider"> <span>Remember choice and sign in
+                          automatically</span></label></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <section class="TourBanner">
+      <div class="play-view"></div>
+      <div class="playNow"><a native href="/play"><b>Play now</b> in your browser</a> or create a <a
+          href="/account/spaces" class="void"><b>Free Space</b></a></div>
+    </section>
+    <section class="HomePreview">
+      <div class="columns">
+        <div class="intro">
+          <h1>Cryptovoxels - a user owned virtual world</h1>
+          <p>Cryptovoxels is a virtual world and metaverse, powered by the Ethereum blockchain. Players can <a
+              href="/buy">buy land</a> and build stores and art galleries. Editing tools, avatars and text chat are
+            built in.</p>
+          <p>Explore <a href="/map">the map</a>, search for <a href="/parcels?q=gallery">Galleries</a>, <a
+              href="/parcels?q=portal">Portals</a> or curated <a href="/parcels?q=collection">Collections</a>.</p>
+        </div>
+        <div class="JoinCommunity">
+          <div class="social-links-container">
+            <ul class="SocialLinksList">
+              <li><a href="https://twitter.com/cryptovoxels"><img src="images/twitter.png" title="Twitter"
+                    class="icon"><span>Twitter</span></a></li>
+              <li><a href="https://discord.gg/rQVMQax"><img src="images/discord.png" title="Discord"
+                    class="icon"><span>Discord</span></a></li>
+              <li><a href="https://www.reddit.com/r/cryptovoxels/"><img src="images/reddit.png" title="Reddit"
+                    class="icon"><span>Reddit</span></a></li>
+              <li><a class="-googlePlay"
+                  href="https://play.google.com/store/apps/details?id=com.cryptovoxels.mobile"><img
+                    src="images/google-play.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-components">
+      <div class="col-left">
+        <div class="popular-home">
+          <h3>Popular Parcels</h3>
+          <p class="subtitle">Popular parcels based on in world visits.</p>
+          <ul class="avatar-tabs">
+            <li><a>Today</a></li>
+            <li class="active"><a>Week</a></li>
+            <li><a>Month</a></li>
+            <li><a>All</a></li>
+          </ul>
+          <p>🏠 <a href="/parcels/5346">31 Bull Avenue</a> - 6279 visits<br><span class="description">Welcome to
+              C.C.DAO...</span></p>
+          <p>🏠 <a href="/parcels/3100">101 Proxima Tower</a> - 4553 visits<br><span class="description">渔王装备店...</span>
+          </p>
+          <p>🏠 <a href="/parcels/1832">小神 便利店</a> - 3973 visits<br><span class="description">小神 便利店...</span></p>
+          <p>🏠 <a href="/parcels/6301">Anna </a> - 3775 visits<br><span class="description">Welcome!...</span></p>
+          <p>🏠 <a href="/parcels/3674">Fortune Gallery</a> - 2512 visits<br><span class="description">Organized by
+              MrPalette, a cyber curator. Thank you for visiting my space.
+
+              www...</span></p>
+          <p>🏠 <a href="/parcels/6771">OneMeta Space</a> - 1880 visits<br><span class="description">Gateway of
+              OneMeta.eth...</span></p>
+          <p>🏠 <a href="/parcels/3">@westcoastbill 21x: stone age</a> - 1711 visits<br><span class="description">Thank
+              you Ben/Sam. We won't let you down.
+              leandro and @westcoastbill - http://t...</span></p>
+          <p>🏠 <a href="/parcels/1">@westcoastbill 21x: space age</a> - 1622 visits<br><span class="description">Thank
+              you Nick/Ben. We won't let you down.
+              leandro and @westcoastbill - http://...</span></p>
+          <p>🏠 <a href="/parcels/6969">Pooja Entertainment</a> - 1446 visits<br><span class="description">Pooja
+              Entertainment Metaverse...</span></p>
+          <p>🏠 <a href="/parcels/12">The Metalith Throne</a> - 1365 visits<br><span class="description">WIP...</span>
+          </p>
+          <p>🏠 <a href="/parcels/2">Welcome!</a> - 1294 visits<br><span class="description">Welcome to Cryptovoxels!
+              This build was done by the skilled and talented Devil t...</span></p>
+          <p>🏠 <a href="/parcels/4">@westcoastbill 21x: glass age</a> - 1090 visits<br><span
+              class="description">www.twitter.com/westcoastbill
+              ...</span></p>
+          <p>🏠 <a href="/parcels/5912">African Museum of the Metaverse</a> - 974 visits<br><span
+              class="description">African Museum of the Metaverse, Cryptovoxels Location.
+
+              Decentraland Location -...</span></p>
+          <p>🏠 <a href="/parcels/3682">META CAFE</a> - 909 visits<br><span class="description">META CAFE is a gallery
+              cafe where people can enjoy drinking coffee, milk, and de...</span></p>
+          <p>🏠 <a href="/parcels/4370">HERETIQUE 121</a> - 893 visits<br><span class="description">Gallery curated by
+              Nico Black and Concepcion...</span></p>
+          <p>🏠 <a href="/parcels/4404">HERETIQUE 121</a> - 876 visits<br><span class="description">Gallery curated by
+              Nico Black and Concepcion...</span></p>
+          <p>🏠 <a href="/parcels/7">SLY's NFTs #4</a> - 847 visits<br><span class="description">Supreme Leader
+              Yetepey's NFT Station #4...</span></p>
+          <p>🏠 <a href="/parcels/6739">Omnium Origin</a> - 839 visits<br><span class="description">This is our HQ and
+              social club. DTT is located on youtube, instagram and the san...</span></p>
+          <p>🏠 <a href="/parcels/4348">eddysean Gallery</a> - 798 visits<br><span class="description">eddysean gallery
+              in cryptovoxels...</span></p>
+          <p>🏠 <a href="/parcels/14">@westcoastbill 21x: Hideout</a> - 637 visits<br><span
+              class="description">www.twitter.com/westcoastbill
+
+              http://www.21x.com
+
+              http://sand.21x.com
+
+              http://v...</span></p>
+        </div>
+      </div>
+      <div class="col-right">
+        <h3>Community events</h3>
+        <p class="subtitle">User-created and hosted events. Click on an event for more info!</p>
+        <div style="">
+          <div class="CommunityEvents">
+            <div class="eventBoard-item undefined">
+              <div title="This event is live!" class="LiveIndicator -closer">
+                <div class="LiveNow">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="event-header" style="background-color: rgb(240, 79, 25);">
+                <h4 style="color: white;"> 🔥A newly constructed stage</h4>
+              </div>
+              <div class="event-body">
+                <p>🔥🔥🔥🔥🔥I love dancing on the stage</p>
+              </div>
+              <div class="event-footer"><small>Happening now (ends at 8:12 am on Wednesday)</small></div>
+            </div>
+            <div class="eventBoard-item undefined">
+              <div title="This event is live!" class="LiveIndicator -closer">
+                <div class="LiveNow">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="event-header" style="background-color: rgb(9, 24, 236);">
+                <h4 style="color: white;"> 🔥🔥Beautiful scenery exhibition</h4>
+              </div>
+              <div class="event-body">
+                <p>🔥🔥🔥🔥🔥🔥I don't think there's any place better than this, you know</p>
+              </div>
+              <div class="event-footer"><small>Happening now (ends at 8:14 am on Wednesday)</small></div>
+            </div>
+            <div class="eventBoard-item undefined">
+              <div title="This event is live!" class="LiveIndicator -closer">
+                <div class="LiveNow">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="event-header" style="background-color: rgb(245, 255, 250);">
+                <h4 style="color: black;"> 🔥🔥🔥Luxury car exhibition</h4>
+              </div>
+              <div class="event-body">
+                <p>🔥🔥🔥🔥🔥Not just luxury cars, but tanks</p>
+              </div>
+              <div class="event-footer"><small>Happening now (ends at 8:15 am on Wednesday)</small></div>
+            </div>
+          </div>
+          <p>&nbsp;<a>» Next</a></p>
+        </div>
+        <h3>Recent Womps</h3>
+        <p class="subtitle">Screenshots taken by users in world. Click a womp to instantly teleport to the location in
+          your browser.</p>
+        <div class="WompsList "><a class="WompCard -small" href="/play?coords=@1125E,754S,6.5U"
+            title="Click to teleport to E@1125E,754S,6.5U"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x8ef583d4f127eabd59dede9e7ef92bcbde9cc4ca/womps/1645619894453-00643632-cc05-4d44-84ce-da18f070b614.jpg">
+            <div title="2 people nearby" class="userCount"><i class="fi-users"></i> 2</div>
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> The Land of NFTs</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x8ef583d4f127eabd59dede9e7ef92bcbde9cc4ca"><i class="fi-user"></i> EEAR_PLUG</a></div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44071">47 seconds ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@5085W,1856N,-9.5U"
+            title="Click to teleport to E@5085W,1856N,-9.5U"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xe330dc28b47d73884ad88837aecfee1f49ad7e7b/womps/1645619055338-cde1fffa-233c-4a6d-b627-184d54575a14.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> Star Shrine</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xe330dc28b47d73884ad88837aecfee1f49ad7e7b"><i class="fi-user"></i> ThePhilosopher</a>
+              </div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44070">14 minutes ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@1740E,1031N,4U"
+            title="Click to teleport to N@1740E,1031N,4U"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x490584eab67d8842baf06dd3184551445f0711f0/womps/1645618542465-1cb8bf9b-8d0a-45e0-932d-dc482eedc113.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> 5 Banded Iguana Street</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x490584eab67d8842baf06dd3184551445f0711f0"><i class="fi-user"></i> yumika</a></div>
+            </header>
+            <div title="METAVERSE TALKS" class="userDescription">
+              <div class="description">METAVERSE TALKS</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44069">23 minutes ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=W@416W,185N" title="Click to teleport to SW@416W,185N"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xd8b41b798a7ce8d30cbc87f007ecb95e1d3c876c/womps/1645618507804-3f84ed35-015f-4ad2-8672-5fe08a4e91f5.jpg">
+            <div title="1 people nearby" class="userCount"><i class="fi-users"></i> 1</div>
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> DJ Sandbox</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xd8b41b798a7ce8d30cbc87f007ecb95e1d3c876c"><i class="fi-user"></i> 113kw</a></div>
+            </header>
+            <div title="HELP WOMEN IN AFGHANISTAN" class="userDescription">
+              <div class="description">HELP WOMEN IN AFGHANISTAN</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44068">23 minutes ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@422W,184N,3.5U"
+            title="Click to teleport to E@422W,184N,3.5U"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xd8b41b798a7ce8d30cbc87f007ecb95e1d3c876c/womps/1645618434290-5158953e-b380-4124-a561-530a42809450.jpg">
+            <div title="1 people nearby" class="userCount"><i class="fi-users"></i> 1</div>
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> DJ Sandbox</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xd8b41b798a7ce8d30cbc87f007ecb95e1d3c876c"><i class="fi-user"></i> 113kw</a></div>
+            </header>
+            <div title="GET A GLASS OF CHAMPAIGNE" class="userDescription">
+              <div class="description">GET A GLASS OF CHAMPAIGNE</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44067">25 minutes ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=W@404W,174N" title="Click to teleport to NW@404W,174N"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x8ef583d4f127eabd59dede9e7ef92bcbde9cc4ca/womps/1645615075678-8f1c3662-8872-48e5-9592-adc333cac480.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> 2 Comma Square</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x8ef583d4f127eabd59dede9e7ef92bcbde9cc4ca"><i class="fi-user"></i> EEAR_PLUG</a></div>
+            </header>
+            <div title="GOOD MORNING
+" class="userDescription">
+              <div class="description">GOOD MORNING
+              </div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44065">1 hour ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@1230W,1076S,-2.5U"
+            title="Click to teleport to N@1230W,1076S,-2.5U"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x63bee620ebfd173d74a4be25eb330c52ea3cb6d4/womps/1645603749091-c3590992-b0fb-4663-9225-7faa04835d4d.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> adidas🔥🔥</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x63bee620ebfd173d74a4be25eb330c52ea3cb6d4"><i class="fi-user"></i> dashu</a></div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44061">4 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=W@1551W,1242S,12.5U"
+            title="Click to teleport to SW@1551W,1242S,12.5U"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xaa4007fbd7b9e5b6445769ca6bc13e86d850b2fb/womps/1645603666627-bbb502ab-d94d-40d1-8cf6-6e9a6107bae0.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> PepsiMicDrop🔥🔥🔥</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xaa4007fbd7b9e5b6445769ca6bc13e86d850b2fb"><i class="fi-user"></i> jiaduobao</a></div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44059">4 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@1447E,1192S,3.5U"
+            title="Click to teleport to W@1447E,1192S,3.5U"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x63bee620ebfd173d74a4be25eb330c52ea3cb6d4/womps/1645603582182-daf29bb2-c343-407f-be7d-51ae8a5a356d.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> BiknowWorld🎄🎅🎁</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x63bee620ebfd173d74a4be25eb330c52ea3cb6d4"><i class="fi-user"></i> dashu</a></div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44057">4 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@1430W,1105S,3.5F"
+            title="Click to teleport to E@1430W,1105S,3.5F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xaa4007fbd7b9e5b6445769ca6bc13e86d850b2fb/womps/1645603496136-0cd05f5b-a1ff-4910-a13c-e8ed05c51325.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> 5 Diadochite Road</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xaa4007fbd7b9e5b6445769ca6bc13e86d850b2fb"><i class="fi-user"></i> jiaduobao</a></div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44055">4 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@803W,227N" title="Click to teleport to S@803W,227N"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xd37ac896d1103a0e48a60e2ceb08b2811995896f/womps/1645602612316-6480b95e-72c8-4152-bf60-4ba1e3fdd038.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> DoraBaby's Land</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xd37ac896d1103a0e48a60e2ceb08b2811995896f"><i class="fi-user"></i> 0xd37ac896</a></div>
+            </header>
+            <div title="First visit to Ting's " class="userDescription">
+              <div class="description">First visit to Ting's </div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44054">4 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@1215W,1069S,5.5F"
+            title="Click to teleport to W@1215W,1069S,5.5F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xaa4007fbd7b9e5b6445769ca6bc13e86d850b2fb/womps/1645599968502-a00a26f8-58a0-4c9d-b2c5-30e46b02caa7.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> Duo</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xaa4007fbd7b9e5b6445769ca6bc13e86d850b2fb"><i class="fi-user"></i> jiaduobao</a></div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44052">5 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@1552W,1256S,8.5F"
+            title="Click to teleport to N@1552W,1256S,8.5F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x63bee620ebfd173d74a4be25eb330c52ea3cb6d4/womps/1645599888633-8f4e7460-a4f0-4d18-91d0-bd765480fd4d.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> PepsiMicDrop🔥🔥🔥</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x63bee620ebfd173d74a4be25eb330c52ea3cb6d4"><i class="fi-user"></i> dashu</a></div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44050">5 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@1464E,1194S,2.5F"
+            title="Click to teleport to W@1464E,1194S,2.5F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xaa4007fbd7b9e5b6445769ca6bc13e86d850b2fb/womps/1645599761881-866d7b90-65f9-45c5-8370-9c89cba70ce6.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> 5 Leleaka Ave</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xaa4007fbd7b9e5b6445769ca6bc13e86d850b2fb"><i class="fi-user"></i> jiaduobao</a></div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44048">5 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@1435W,1108S,-3.5U"
+            title="Click to teleport to W@1435W,1108S,-3.5U"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x63bee620ebfd173d74a4be25eb330c52ea3cb6d4/womps/1645599638113-211a0946-9495-4258-95ce-4ef3c2b66c63.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> 2 Chlormayenite Road</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x63bee620ebfd173d74a4be25eb330c52ea3cb6d4"><i class="fi-user"></i> dashu</a></div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44046">5 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@977E,133S,7.5U"
+            title="Click to teleport to S@977E,133S,7.5U"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x18b08deae2b7d01f255998829f887bacbf1b2ac4/womps/1645597808556-7646bd2d-cc6e-4145-a08b-879ecb2166f1.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> SKIES MIAMI</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x18b08deae2b7d01f255998829f887bacbf1b2ac4"><i class="fi-user"></i> Stashbox20</a></div>
+            </header>
+            <div title="twitter @stashbox2021" class="userDescription">
+              <div class="description">twitter @stashbox2021</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44045">6 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=E@900E,188S,3.5F"
+            title="Click to teleport to SE@900E,188S,3.5F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x4bcac160ce0fb9015c2b8c28726cb1eac879a960/womps/1645597618566-5b7d1afd-3d17-49b7-b3ed-b6313ba83699.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> Afrodroids Lab</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x4bcac160ce0fb9015c2b8c28726cb1eac879a960"><i class="fi-user"></i> sharkanthony</a>
+              </div>
+            </header>
+            <div title="Looking &amp; Sounding Good :)" class="userDescription">
+              <div class="description">Looking &amp; Sounding Good :)</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44044">6 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@5279W,1825N,23.5F"
+            title="Click to teleport to N@5279W,1825N,23.5F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x30cb353847c13983d0576c04b2d5d762d813cc26/womps/1645597437545-92f06fe6-1e40-4162-9e88-08f9a79c6b6b.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> 7 Quijote Street</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x30cb353847c13983d0576c04b2d5d762d813cc26"><i class="fi-user"></i> 0x30cb3538</a></div>
+            </header>
+            <div title="FarmerDAO" class="userDescription">
+              <div class="description">FarmerDAO</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44043">6 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@5284W,1804N,38.5F"
+            title="Click to teleport to N@5284W,1804N,38.5F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x30cb353847c13983d0576c04b2d5d762d813cc26/womps/1645597134593-5724cb9e-b044-4b44-adb4-828790401693.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> 7 Quijote Street</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x30cb353847c13983d0576c04b2d5d762d813cc26"><i class="fi-user"></i> 0x30cb3538</a></div>
+            </header>
+            <div title="FarmerDAO's new home." class="userDescription">
+              <div class="description">FarmerDAO's new home.</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44042">6 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=W@634W,447N" title="Click to teleport to SW@634W,447N"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x057ee17c467852f4df0946fdcac72359d11eb555/womps/1645594478498-5768d802-6198-455e-9544-618c22cb7e3e.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> RIvermenverse</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x057ee17c467852f4df0946fdcac72359d11eb555"><i class="fi-user"></i> Metanative</a></div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44041">7 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@1732E,1028N,6F"
+            title="Click to teleport to E@1732E,1028N,6F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xca6ffe8b51fb7cb1e0897a5d92d47523d64661c5/womps/1645586693291-4ee95c63-5155-47ba-a407-93316240e677.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> Fauna Sanctuary: Bitpixi's Wing - "Tuesday Metaverse
+                Talks + Friday Build Challenge"</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xca6ffe8b51fb7cb1e0897a5d92d47523d64661c5"><i class="fi-user"></i>
+                  jamesfinnerty.eth</a></div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44040">9 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@1730E,1028N,6.5F"
+            title="Click to teleport to E@1730E,1028N,6.5F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xca6ffe8b51fb7cb1e0897a5d92d47523d64661c5/womps/1645586517487-d31e2b17-a727-47d8-8274-802790fd8bec.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> Fauna Sanctuary: Bitpixi's Wing - "Tuesday Metaverse
+                Talks + Friday Build Challenge"</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xca6ffe8b51fb7cb1e0897a5d92d47523d64661c5"><i class="fi-user"></i>
+                  jamesfinnerty.eth</a></div>
+            </header>
+            <div title="Fauna Sanctuary has all the vibes. <3" class="userDescription">
+              <div class="description">Fauna Sanctuary has all the vibes. &lt;3</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44039">9 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=W@635W,450N,9F"
+            title="Click to teleport to SW@635W,450N,9F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x3d1163e402ec0c0f58297e1e88bd992b729ee520/womps/1645586269702-b7140bc2-7a1c-4bae-8877-0cf1d3ba2720.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> RIvermenverse</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x3d1163e402ec0c0f58297e1e88bd992b729ee520"><i class="fi-user"></i> Yesichen</a></div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44038">9 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=W@5453W,1931N,8F"
+            title="Click to teleport to NW@5453W,1931N,8F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x353f6124e6316cc19f0f0c4335bdfa1b268071b3/womps/1645583291556-31e4e6b4-2c77-4912-9676-6a35c4c3c170.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> Food Hall + Community Center</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x353f6124e6316cc19f0f0c4335bdfa1b268071b3"><i class="fi-user"></i> 4everKurious</a>
+              </div>
+            </header>
+            <div title="picnic tables arrived today at the Food Hall" class="userDescription">
+              <div class="description">picnic tables arrived today at the Food Hall</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44037">10 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=W@1741E,1028N,4U"
+            title="Click to teleport to NW@1741E,1028N,4U"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xe330dc28b47d73884ad88837aecfee1f49ad7e7b/womps/1645582472259-a7adc559-6551-4d63-a17b-f3f5253e5dd5.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> Fauna Sanctuary: Bitpixi's Wing - "Tuesday Metaverse
+                Talks + Friday Build Challenge"</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xe330dc28b47d73884ad88837aecfee1f49ad7e7b"><i class="fi-user"></i> ThePhilosopher</a>
+              </div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44036">10 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@6708W,37N,11.5F"
+            title="Click to teleport to N@6708W,37N,11.5F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x8f090ec5826c3042d5323598cc3248b4ea241663/womps/1645582134171-8453cb5a-0239-434e-a051-ee9e3dbbc293.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> LEXICON DEVILS</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x8f090ec5826c3042d5323598cc3248b4ea241663"><i class="fi-user"></i> DJIMMINENT</a></div>
+            </header>
+            <div title="JAM time! " class="userDescription">
+              <div class="description">JAM time! </div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44035">10 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=W@1559W,1071S,12F"
+            title="Click to teleport to SW@1559W,1071S,12F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xf8264DAe37063158327fd8A0c03BAc9B106e2c5f/womps/1645582079784-6ef6d41d-77e4-476a-889a-1a0b06a08c5e.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> Degenz Den</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xf8264DAe37063158327fd8A0c03BAc9B106e2c5f"><i class="fi-user"></i> jmoreen.eth</a>
+              </div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44034">10 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@1559W,1071S,12F"
+            title="Click to teleport to S@1559W,1071S,12F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xf8264DAe37063158327fd8A0c03BAc9B106e2c5f/womps/1645581983020-270aa934-1277-4f29-b424-98b7046a6a15.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> 17 Bromargyrite Terrace</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xf8264DAe37063158327fd8A0c03BAc9B106e2c5f"><i class="fi-user"></i> jmoreen.eth</a>
+              </div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44033">10 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=E@1715E,1033N"
+            title="Click to teleport to SE@1715E,1033N"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x353f6124e6316cc19f0f0c4335bdfa1b268071b3/womps/1645581848841-70c46512-43e8-4264-b1ff-e2f6c4e3f393.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> Fauna Sanctuary + Lodge</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x353f6124e6316cc19f0f0c4335bdfa1b268071b3"><i class="fi-user"></i> 4everKurious</a>
+              </div>
+            </header>
+            <div title="Another view of the Fauna Sanctuary and Lodge" class="userDescription">
+              <div class="description">Another view of the Fauna Sanctuary and Lodge</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44032">10 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=E@1733E,1023N,6.5F"
+            title="Click to teleport to NE@1733E,1023N,6.5F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x353f6124e6316cc19f0f0c4335bdfa1b268071b3/womps/1645581522747-9df801d2-8a8d-4975-80e4-b6bb7d3340bb.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> Fauna Sanctuary: Bitpixi's Wing - "Tuesday Metaverse
+                Talks + Friday Build Challenge"</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x353f6124e6316cc19f0f0c4335bdfa1b268071b3"><i class="fi-user"></i> 4everKurious</a>
+              </div>
+            </header>
+            <div
+              title="Rocking on Fauna - play, talk and listen - Twitter spaces &quot;Tuesday Metaverse Talks&quot; ..."
+              class="userDescription">
+              <div class="description">Rocking on Fauna - play, talk and listen - Twitter spaces "Tuesday Metaverse
+                Talks" ...</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44031">10 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=E@1738E,1028N,4U"
+            title="Click to teleport to NE@1738E,1028N,4U"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xb7d3a787a39f25457ca511dc3f0591b546f5e02f/womps/1645581315132-96fdc715-eb0a-4e00-9747-b619071910c3.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> Fauna Sanctuary: Bitpixi's Wing - "Tuesday Metaverse
+                Talks + Friday Build Challenge"</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xb7d3a787a39f25457ca511dc3f0591b546f5e02f"><i class="fi-user"></i> bitpixi.eth</a>
+              </div>
+            </header>
+            <div title="Live on Twitter Spaces" class="userDescription">
+              <div class="description">Live on Twitter Spaces</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44030">10 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@1736E,1025N,4U"
+            title="Click to teleport to N@1736E,1025N,4U"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x353f6124e6316cc19f0f0c4335bdfa1b268071b3/womps/1645580950523-091e87d5-02dd-4188-9e37-b19aaaecbf6e.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> Fauna Sanctuary: Bitpixi's Wing - "Tuesday Metaverse
+                Talks + Friday Build Challenge"</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x353f6124e6316cc19f0f0c4335bdfa1b268071b3"><i class="fi-user"></i> 4everKurious</a>
+              </div>
+            </header>
+            <div title="Talking all things metaverse - so fun!!" class="userDescription">
+              <div class="description">Talking all things metaverse - so fun!!</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44029">10 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=W@1745E,1026N,4U"
+            title="Click to teleport to NW@1745E,1026N,4U"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x353f6124e6316cc19f0f0c4335bdfa1b268071b3/womps/1645580855089-663ea974-1f61-4b6b-a29a-10d7ea95a603.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> Fauna Sanctuary: Bitpixi's Wing - "Tuesday Metaverse
+                Talks + Friday Build Challenge"</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x353f6124e6316cc19f0f0c4335bdfa1b268071b3"><i class="fi-user"></i> 4everKurious</a>
+              </div>
+            </header>
+            <div title="Come join us for a metaverse talk with @bitpixi @dropacid ... Also on twitter spaces NOW!
+" class="userDescription">
+              <div class="description">Come join us for a metaverse talk with @bitpixi @dropacid ... Also on twitter
+                spaces NOW!
+              </div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44028">10 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@1741E,1025N,4.5F"
+            title="Click to teleport to N@1741E,1025N,4.5F"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xff84b20cc3c1f81b645e18bc100eeeb6ecc4aaf3/womps/1645579129802-5d45fd83-70d9-44e7-9d15-eed5b18af0da.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> Fauna Sanctuary: Bitpixi's Wing - "Tuesday Metaverse
+                Talks + Friday Build Challenge"</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xff84b20cc3c1f81b645e18bc100eeeb6ecc4aaf3"><i class="fi-user"></i> 0xff84b20c</a></div>
+            </header>
+            <div title="Tuesday Metaverse Talks &amp; Friday Building Chanllenge!" class="userDescription">
+              <div class="description">Tuesday Metaverse Talks &amp; Friday Building Chanllenge!</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44027">11 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=W@78W,4963N" title="Click to teleport to NW@78W,4963N"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xbb1261aa172937f4606565843f395023206d08ee/womps/1645578819491-f4c3a880-bb85-4ab6-86b6-91ccd3aa07ac.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> NFDaddys</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xbb1261aa172937f4606565843f395023206d08ee"><i class="fi-user"></i> AstroChris</a></div>
+            </header>
+            <div title="Ultimate Invasion MetaEvent with Gregory James @NFDaddys" class="userDescription">
+              <div class="description">Ultimate Invasion MetaEvent with Gregory James @NFDaddys</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44026">11 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@74W,4965N" title="Click to teleport to S@74W,4965N"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x7865dcc2b04e0916b1286c36caec655d4a1b8429/womps/1645576040024-dff0ba95-7bdb-4aee-b61f-d947dac1b5d9.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> NFDaddys</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x7865dcc2b04e0916b1286c36caec655d4a1b8429"><i class="fi-user"></i> RainbowMosho</a>
+              </div>
+            </header>
+            <div title="Watching @astrochris @AmazonPrime debut!!! wowww " class="userDescription">
+              <div class="description">Watching @astrochris @AmazonPrime debut!!! wowww </div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44025">12 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=W@70W,4961N" title="Click to teleport to NW@70W,4961N"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x904b306dcc7aefcd89b2d55165894bea545f89f9/womps/1645575528534-e6d2ff50-06be-419d-adfd-ecda4a1bddca.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> NFDaddys</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x904b306dcc7aefcd89b2d55165894bea545f89f9"><i class="fi-user"></i> nfdaddys.eth</a>
+              </div>
+            </header>
+            <div title="ULTIMATE INVASION amazon prime series premier" class="userDescription">
+              <div class="description">ULTIMATE INVASION amazon prime series premier</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44024">12 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=E@80W,4965N" title="Click to teleport to NE@80W,4965N"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x904b306dcc7aefcd89b2d55165894bea545f89f9/womps/1645575458292-77f02e2d-67ce-4ee6-b552-92de67bab7d2.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> NFDaddys</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x904b306dcc7aefcd89b2d55165894bea545f89f9"><i class="fi-user"></i> nfdaddys.eth</a>
+              </div>
+            </header>
+            <div title="ULTIMATE INVASION TAKEOVER" class="userDescription">
+              <div class="description">ULTIMATE INVASION TAKEOVER</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44023">12 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@6694W,68N" title="Click to teleport to N@6694W,68N"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x175cfad33122b97dae15f063093d445646069665/womps/1645574862439-14009edd-1243-48c6-bc9b-1710e8f25b79.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> imnotArt Chicago</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x175cfad33122b97dae15f063093d445646069665"><i class="fi-user"></i>
+                  mothertheresa.eth</a></div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44022">12 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@6694W,68N" title="Click to teleport to N@6694W,68N"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x175cfad33122b97dae15f063093d445646069665/womps/1645574419891-59af5718-261c-4517-bf94-ac6189f10b34.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> imnotArt Chicago</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x175cfad33122b97dae15f063093d445646069665"><i class="fi-user"></i>
+                  mothertheresa.eth</a></div>
+            </header>
+            <div title="" class="userDescription">
+              <div class="description"></div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44021">12 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@5029W,1923N"
+            title="Click to teleport to S@5029W,1923N"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0xdf02eb8bf194697df8155f2e4d03f1f8ebf64092/womps/1645574288822-7a759e95-8a46-4e86-b7e2-691083e9322d.jpg">
+            <div title="2 people nearby" class="userCount"><i class="fi-users"></i> 2</div>
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> MultiNFT Center</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0xdf02eb8bf194697df8155f2e4d03f1f8ebf64092"><i class="fi-user"></i> MultiNFT</a></div>
+            </header>
+            <div title="MultiNFT Center" class="userDescription">
+              <div class="description">MultiNFT Center</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44019">12 hours ago</a></div>
+          </a><a class="WompCard -small" href="/play?coords=@6694W,68N" title="Click to teleport to N@6694W,68N"><img
+              src="https://media-crvox.sfo2.digitaloceanspaces.com/0x175cfad33122b97dae15f063093d445646069665/womps/1645574173360-0d2d077a-d7d2-4eb0-a862-a96157fab771.jpg">
+            <header id="wompHeader">
+              <div class="parcel"><i class="fi-map-marker"></i> imnotArt Chicago</div>
+              <div class="user"><a title="View User Profile"
+                  href="/avatar/0x175cfad33122b97dae15f063093d445646069665"><i class="fi-user"></i>
+                  mothertheresa.eth</a></div>
+            </header>
+            <div title="BRANDON BREAUX NFT EDUCATION NIGHT!" class="userDescription">
+              <div class="description">BRANDON BREAUX NFT EDUCATION NIGHT!</div>
+            </div>
+            <div class="time"><a title="View Womp Page" href="/womps/44018">12 hours ago</a></div>
+          </a></div>
+      </div>
+    </section>
+    <footer>
+      <p class="footer-links"><a href="/about">About</a> | <a href="https://wiki.cryptovoxels.com/"
+          target="_blank">Wiki</a> | <a href="/press">Press and Team</a> | <a
+          href="https://offsetra.com/profile/cryptovoxels" target="_blank">Carbon offset</a></p>
+      <p>Cryptovoxels V.18510</p>
+      <p>© Nolan Consulting Limited - Building Virtual Worlds</p>
+      <p><a href="/terms">Terms of use</a> | <a href="/privacy">Privacy Policy</a> | <a href="/conduct">Code of
+          Conduct</a></p>
+    </footer>
+  </div>
+</body>
+
+<!--====== Javascripts & Jquery ======-->
+<script src="js/babylon.js"></script>
+<script async src="js/leaflet.js"></script>
+<script async src="js/babylon.gui.min.js"></script>
+<script async src="js/babylonjs.materials.min.js"></script>
+<script async src="js/babylonjs.loaders.min.js"></script>
+<!-- <script src="js/web-18510.js"></script> -->
+<script async src="torus-embed"></script>
+
+<script src="js/script.js" data-site="AGDDHJCW" data-spa="auto"></script>
+
+<!-- javascript for automatic buy modal -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11" async></script>
+
+<script src="js/main.js"></script>
+
+</html>

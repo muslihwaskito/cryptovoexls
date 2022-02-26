@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="o5_ZqQfMG6_AC3py_4L8zNpFfHVSZ3aj3JEGlB2rN5Y">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link href="css/web.css" rel="stylesheet">
+  <title>Cryptovoxels</title>
+</head>
+
+<body>
+  <div>
+    <div class="WebHeader ">
+      <div class="logo"><a href="/"><img src="images/cv-logo-96.png"></a></div>
+      <header>
+        <nav>
+          <ul>
+            <li><a class="-home " href="/">Explore</a></li>
+            <li><a href="/map" class>Map</a></li>
+            <li><a href="/buy" class>Buy Parcels</a></li>
+            <li><a class="-active" href="/marketplace">Marketplace</a></li>
+            <li><a class href="https://support.cryptovoxels.com">Support</a></li>
+            <li class="WebSearch"><input type="search" placeholder="Search..."></li>
+          </ul>
+        </nav>
+        <div class="WebTopBar">
+          <ul>
+            <li tabIndex="0" class="" id="btn-signin-popup">
+              <a id="btn-signin"><i class="fi-sign-in"></i> Sign in</a>
+              <div class="dropDown" style="display: none;" id="popup-wallet">
+                <div class="TopBarOverlay -signIn">
+                  <header>
+                    <h2>Choose sign-in provider:</h2><span tabindex="0" class="closeButton" id="close-popup"><i
+                        class="fi-close"></i></span>
+                  </header>
+                  <div>
+                    <div class="WalletProviderChooser">
+                      <div class="provider" id="metamask" tabindex="0" title="Metamask"><img src="https://www.cryptovoxels.com/images/metamask.png"
+                          title="Metamask">
+                        <header>Metamask</header>
+                        <p>install extension</p>
+                      </div>
+                      <div class="provider" id="truswallet" tabindex="0" title="WalletConnect" id="waller-connect"><img src="	https://www.cryptovoxels.com/images/walletconnect.png
+                        "
+                          title="WalletConnect">
+                        <header>WalletConnect</header>
+                        <p>via QR Code</p>
+                      </div>
+                      <div class="provider" id="wallet-link" tabindex="0" title="WalletLink" id="wallet-link"><img src="https://www.cryptovoxels.com/images/walletlink.png"
+                          title="WalletLink">
+                        <header>WalletLink</header>
+                        <p>via QR Code</p>
+                      </div>
+                      <div class="provider" id="facebook" tabindex="0" title="Facebook" id="facebook"><img src="https://www.cryptovoxels.com/images/facebook.png
+                        "
+                          title="Facebook">
+                        <header>Facebook</header>
+                        <p>via Torus</p>
+                      </div>
+                    </div>
+                    <div style="white-space: break-spaces; margin-top: 10px;"><label class="rememberCheckbox"><input
+                          type="checkbox" name="rememberProvider"> <span>Remember choice and sign in
+                          automatically</span></label></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <section>
+      <h1>Marketplace</h1>
+      <nav class="MarketPlaceNavigation"><a href="/marketplace">All</a><a
+          href="/marketplace/collectibles.html">Collectibles</a><a href="/marketplace/collections.html">Collections</a><a
+          href="/marketplace/parcels.html" class="active">Parcels</a></nav>
+      <div>
+
+        <head>
+          <title>Marketplace - Parcels</title>
+        </head>
+        <section class="SplitPanel">
+          <section class="MarketPlace-Parcels"><br>
+            <div class="ParcelsSortTools" style="display: flex; margin: 0px;">
+              <div><label for="searchInput">Search: </label><input type="text" id="searchInput"></div>
+              <div class="WebSortingOptions">Sort by:<a class="active descending">Parcel ID</a><a
+                  title="Area of the ground">Area</a><a title="Island in the world">Island</a><a
+                  title="Distance from center of world">Suburb</a><a title="Building height limit">Height</a><a
+                  title="Distance from center of world">Distance</a></div>
+            </div>
+            <div>
+              <table class="for-sale">
+                <tr>
+                  <th>Id</th>
+                  <th></th>
+                  <th>Name / Address</th>
+                  <th title="Area of the ground">Area</th>
+                  <th title="Building height limit">Height</th>
+                  <th title="Volume in voxels">Volume</th>
+                  <th>Owner</th>
+                  <th>Actions</th>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7421</td>
+                  <td><a href="/parcels/7421"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-55.735&amp;y=19.495"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7421" class="">2b Gacrux Ave</a></b><br><small>2b Gacrux Ave, near Milky
+                        Way, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">585<small>m²</small></td>
+                  <td data-label="Height">6<small>m</small></td>
+                  <td data-label="Volume">28080<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7421"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7420</td>
+                  <td><a href="/parcels/7420"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-53.28&amp;y=18.44"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7420" class="">5g Regulus Terrace</a></b><br><small>5g Regulus Terrace,
+                        near Milky Way, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">320<small>m²</small></td>
+                  <td data-label="Height">8<small>m</small></td>
+                  <td data-label="Volume">20480<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7420"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7419</td>
+                  <td><a href="/parcels/7419"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-53.28&amp;y=18.44"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7419" class="">5f Regulus Terrace</a></b><br><small>5f Regulus Terrace,
+                        near Milky Way, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">320<small>m²</small></td>
+                  <td data-label="Height">7<small>m</small></td>
+                  <td data-label="Volume">17920<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7419"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7418</td>
+                  <td><a href="/parcels/7418"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-53.28&amp;y=18.44"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7418" class="">5e Regulus Terrace</a></b><br><small>5e Regulus Terrace,
+                        near Milky Way, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">320<small>m²</small></td>
+                  <td data-label="Height">7<small>m</small></td>
+                  <td data-label="Volume">17920<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7418"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7417</td>
+                  <td><a href="/parcels/7417"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-53.28&amp;y=18.44"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7417" class="">5d Regulus Terrace</a></b><br><small>5d Regulus Terrace,
+                        near Milky Way, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">320<small>m²</small></td>
+                  <td data-label="Height">9<small>m</small></td>
+                  <td data-label="Volume">23040<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7417"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7416</td>
+                  <td><a href="/parcels/7416"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-53.28&amp;y=18.44"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7416" class="">5c Regulus Terrace</a></b><br><small>5c Regulus Terrace,
+                        near Milky Way, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">320<small>m²</small></td>
+                  <td data-label="Height">6<small>m</small></td>
+                  <td data-label="Volume">15360<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7416"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7415</td>
+                  <td><a href="/parcels/7415"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-53.28&amp;y=18.44"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7415" class="">5b Regulus Terrace</a></b><br><small>5b Regulus Terrace,
+                        near Milky Way, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">320<small>m²</small></td>
+                  <td data-label="Height">10<small>m</small></td>
+                  <td data-label="Volume">25600<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7415"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7414</td>
+                  <td><a href="/parcels/7414"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-50.615&amp;y=18.72"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7414" class="">3b Mastika Street</a></b><br><small>3b Mastika Street, near
+                        Comet, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">588<small>m²</small></td>
+                  <td data-label="Height">9<small>m</small></td>
+                  <td data-label="Volume">42336<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7414"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7413</td>
+                  <td><a href="/parcels/7413"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.685&amp;y=16.36"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7413" class="">7 Alkaid Road</a></b><br><small>7 Alkaid Road, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">276<small>m²</small></td>
+                  <td data-label="Height">8<small>m</small></td>
+                  <td data-label="Volume">17664<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7413"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7412</td>
+                  <td><a href="/parcels/7412"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.685&amp;y=16.51"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7412" class="">2 Neri Ave</a></b><br><small>2 Neri Ave, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">414<small>m²</small></td>
+                  <td data-label="Height">17<small>m</small></td>
+                  <td data-label="Volume">56304<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7412"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7411</td>
+                  <td><a href="/parcels/7411"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.455&amp;y=16.4"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7411" class="">5 Alkaid Road</a></b><br><small>5 Alkaid Road, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">460<small>m²</small></td>
+                  <td data-label="Height">19<small>m</small></td>
+                  <td data-label="Volume">69920<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7411"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7410</td>
+                  <td><a href="/parcels/7410"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.64&amp;y=16.75"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7410" class="">2 Dimidium Terrace</a></b><br><small>2 Dimidium Terrace,
+                        near Eye of Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">704<small>m²</small></td>
+                  <td data-label="Height">11<small>m</small></td>
+                  <td data-label="Volume">61952<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7410"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7409</td>
+                  <td><a href="/parcels/7409"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.685&amp;y=16.95"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7409" class="">3 Dimidium Terrace</a></b><br><small>3 Dimidium Terrace,
+                        near Eye of Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">230<small>m²</small></td>
+                  <td data-label="Height">23<small>m</small></td>
+                  <td data-label="Volume">42320<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7409"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7408</td>
+                  <td><a href="/parcels/7408"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.455&amp;y=16.55"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7408" class="">11 Eyeke Ave</a></b><br><small>11 Eyeke Ave, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">230<small>m²</small></td>
+                  <td data-label="Height">15<small>m</small></td>
+                  <td data-label="Volume">27600<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7408"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7407</td>
+                  <td><a href="/parcels/7407"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.685&amp;y=17.08"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7407" class="">31 Bran Ave</a></b><br><small>31 Bran Ave, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">368<small>m²</small></td>
+                  <td data-label="Height">9<small>m</small></td>
+                  <td data-label="Volume">26496<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7407"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7406</td>
+                  <td><a href="/parcels/7406"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.695&amp;y=17.26"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7406" class="">37 Bran Ave</a></b><br><small>37 Bran Ave, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">252<small>m²</small></td>
+                  <td data-label="Height">12<small>m</small></td>
+                  <td data-label="Volume">24192<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7406"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7405</td>
+                  <td><a href="/parcels/7405"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.245&amp;y=16.415"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7405" class="">3 Alkaid Road</a></b><br><small>3 Alkaid Road, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">253<small>m²</small></td>
+                  <td data-label="Height">12<small>m</small></td>
+                  <td data-label="Volume">24288<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7405"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7404</td>
+                  <td><a href="/parcels/7404"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.41&amp;y=16.75"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7404" class="">5 Eyeke Ave</a></b><br><small>5 Eyeke Ave, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">308<small>m²</small></td>
+                  <td data-label="Height">21<small>m</small></td>
+                  <td data-label="Volume">51744<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7404"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7403</td>
+                  <td><a href="/parcels/7403"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.695&amp;y=17.49"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7403" class="">3 Perwana Ave</a></b><br><small>3 Perwana Ave, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">714<small>m²</small></td>
+                  <td data-label="Height">9<small>m</small></td>
+                  <td data-label="Volume">51408<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7403"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7402</td>
+                  <td><a href="/parcels/7402"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.455&amp;y=16.96"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7402" class="">2 Eyeke Ave</a></b><br><small>2 Eyeke Ave, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">276<small>m²</small></td>
+                  <td data-label="Height">15<small>m</small></td>
+                  <td data-label="Volume">33120<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7402"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7401</td>
+                  <td><a href="/parcels/7401"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-50.815&amp;y=16.46"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7401" class="">2 Taphao Kaew Ave</a></b><br><small>2 Taphao Kaew Ave, near
+                        Comet, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">928<small>m²</small></td>
+                  <td data-label="Height">11<small>m</small></td>
+                  <td data-label="Volume">81664<small>m³</small></td>
+                  <td data-label="Owner" class="owner">0x4cce2673...</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7401"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7400</td>
+                  <td><a href="/parcels/7400"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-51.585&amp;y=22.47"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7400" class="">2 Saffar Road</a></b><br><small>2 Saffar Road, near Milky
+                        Way, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">962<small>m²</small></td>
+                  <td data-label="Height">17<small>m</small></td>
+                  <td data-label="Volume">130832<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7400"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7399</td>
+                  <td><a href="/parcels/7399"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.455&amp;y=17.09"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7399" class="">23 Bran Ave</a></b><br><small>23 Bran Ave, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">322<small>m²</small></td>
+                  <td data-label="Height">15<small>m</small></td>
+                  <td data-label="Volume">38640<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7399"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7398</td>
+                  <td><a href="/parcels/7398"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.68&amp;y=20.18"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7398" class="">7 Betelgeuse Road</a></b><br><small>7 Betelgeuse Road, near
+                        Eye of Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">432<small>m²</small></td>
+                  <td data-label="Height">11<small>m</small></td>
+                  <td data-label="Volume">38016<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7398"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7397</td>
+                  <td><a href="/parcels/7397"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.67&amp;y=17.8"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7397" class="">13 Tondra Road</a></b><br><small>13 Tondra Road, near Eye
+                        of Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">520<small>m²</small></td>
+                  <td data-label="Height">8<small>m</small></td>
+                  <td data-label="Volume">33280<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7397"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7396</td>
+                  <td><a href="/parcels/7396"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.055&amp;y=16.415"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7396" class="">2 Alkaid Road</a></b><br><small>2 Alkaid Road, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">621<small>m²</small></td>
+                  <td data-label="Height">8<small>m</small></td>
+                  <td data-label="Volume">39744<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7396"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7395</td>
+                  <td><a href="/parcels/7395"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.19&amp;y=16.645"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7395" class="">7 Eyeke Ave</a></b><br><small>7 Eyeke Ave, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">506<small>m²</small></td>
+                  <td data-label="Height">11<small>m</small></td>
+                  <td data-label="Volume">44528<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7395"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7394</td>
+                  <td><a href="/parcels/7394"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.68&amp;y=19.995"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7394" class="">2 Alnitak Road</a></b><br><small>2 Alnitak Road, near Eye
+                        of Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">456<small>m²</small></td>
+                  <td data-label="Height">9<small>m</small></td>
+                  <td data-label="Volume">32832<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7394"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7393</td>
+                  <td><a href="/parcels/7393"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.695&amp;y=18.125"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7393" class="">17 Tondra Road</a></b><br><small>17 Tondra Road, near Eye
+                        of Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">777<small>m²</small></td>
+                  <td data-label="Height">11<small>m</small></td>
+                  <td data-label="Volume">68376<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7393"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7392</td>
+                  <td><a href="/parcels/7392"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.465&amp;y=17.315"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7392" class="">29 Bran Ave</a></b><br><small>29 Bran Ave, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">391<small>m²</small></td>
+                  <td data-label="Height">15<small>m</small></td>
+                  <td data-label="Volume">46920<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7392"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7391</td>
+                  <td><a href="/parcels/7391"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-50.815&amp;y=16.725"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7391" class="">ANNO STADIUM</a></b><br><small>3 Pollera Terrace, near
+                        Comet, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">609<small>m²</small></td>
+                  <td data-label="Height">12<small>m</small></td>
+                  <td data-label="Volume">58464<small>m³</small></td>
+                  <td data-label="Owner" class="owner">anno</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7391"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7390</td>
+                  <td><a href="/parcels/7390"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.26&amp;y=16.89"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7390" class="">3 Eyeke Ave</a></b><br><small>3 Eyeke Ave, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">144<small>m²</small></td>
+                  <td data-label="Height">31<small>m</small></td>
+                  <td data-label="Volume">35712<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7390"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7389</td>
+                  <td><a href="/parcels/7389"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.68&amp;y=19.79"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7389" class="">5 Capella Road</a></b><br><small>5 Capella Road, near Eye
+                        of Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">336<small>m²</small></td>
+                  <td data-label="Height">10<small>m</small></td>
+                  <td data-label="Volume">26880<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7389"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7388</td>
+                  <td><a href="/parcels/7388"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.69&amp;y=19.645"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7388" class="">7 Capella Road</a></b><br><small>7 Capella Road, near Eye
+                        of Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">154<small>m²</small></td>
+                  <td data-label="Height">10<small>m</small></td>
+                  <td data-label="Volume">12320<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7388"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7387</td>
+                  <td><a href="/parcels/7387"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-50.295&amp;y=19.395"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7387" class="">3 Harriot Terrace</a></b><br><small>3 Harriot Terrace, near
+                        Comet, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">323<small>m²</small></td>
+                  <td data-label="Height">15<small>m</small></td>
+                  <td data-label="Volume">38760<small>m³</small></td>
+                  <td data-label="Owner" class="owner">0xeb7d8b23...</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7387"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7386</td>
+                  <td><a href="/parcels/7386"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.69&amp;y=19.505"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7386" class="">17 Eburonia Terrace</a></b><br><small>17 Eburonia Terrace,
+                        near Eye of Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">462<small>m²</small></td>
+                  <td data-label="Height">13<small>m</small></td>
+                  <td data-label="Volume">48048<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7386"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7385</td>
+                  <td><a href="/parcels/7385"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-50.295&amp;y=19.22"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7385" class="">MultiNFT Center</a></b><br><small>2 Harriot Terrace, near
+                        Comet, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">190<small>m²</small></td>
+                  <td data-label="Height">18<small>m</small></td>
+                  <td data-label="Volume">27360<small>m³</small></td>
+                  <td data-label="Owner" class="owner">MultiNFT</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7385"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7384</td>
+                  <td><a href="/parcels/7384"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-50.295&amp;y=19.105"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7384" class="">2 Onasilos Ave</a></b><br><small>2 Onasilos Ave, near
+                        Comet, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">247<small>m²</small></td>
+                  <td data-label="Height">12<small>m</small></td>
+                  <td data-label="Volume">23712<small>m³</small></td>
+                  <td data-label="Owner" class="owner">weicai.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7384"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7383</td>
+                  <td><a href="/parcels/7383"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.69&amp;y=18.81"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7383" class="">61 Equiano Street</a></b><br><small>61 Equiano Street, near
+                        Eye of Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">660<small>m²</small></td>
+                  <td data-label="Height">14<small>m</small></td>
+                  <td data-label="Volume">73920<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7383"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7382</td>
+                  <td><a href="/parcels/7382"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.275&amp;y=17.07"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7382" class="">17 Bran Ave</a></b><br><small>17 Bran Ave, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">90<small>m²</small></td>
+                  <td data-label="Height">46<small>m</small></td>
+                  <td data-label="Volume">33120<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7382"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7381</td>
+                  <td><a href="/parcels/7381"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.45&amp;y=17.545"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7381" class="">2 Perwana Ave</a></b><br><small>2 Perwana Ave, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">460<small>m²</small></td>
+                  <td data-label="Height">13<small>m</small></td>
+                  <td data-label="Volume">47840<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7381"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7380</td>
+                  <td><a href="/parcels/7380"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-50.335&amp;y=18.675"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7380" class="">2 Mastika Street</a></b><br><small>2 Mastika Street, near
+                        Comet, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">513<small>m²</small></td>
+                  <td data-label="Height">13<small>m</small></td>
+                  <td data-label="Volume">53352<small>m³</small></td>
+                  <td data-label="Owner" class="owner">moya</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7380"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7379</td>
+                  <td><a href="/parcels/7379"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-50.77&amp;y=17.015"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7379" class="">2 Peacock Road</a></b><br><small>2 Peacock Road, near
+                        Comet, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">1102<small>m²</small></td>
+                  <td data-label="Height">16<small>m</small></td>
+                  <td data-label="Volume">141056<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7379"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7378</td>
+                  <td><a href="/parcels/7378"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-50.335&amp;y=18.865"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7378" class="">3 Onasilos Ave</a></b><br><small>3 Onasilos Ave, near
+                        Comet, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">513<small>m²</small></td>
+                  <td data-label="Height">8<small>m</small></td>
+                  <td data-label="Volume">32832<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7378"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7377</td>
+                  <td><a href="/parcels/7377"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.16&amp;y=16.89"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7377" class="">3 Caleuche Street</a></b><br><small>3 Caleuche Street, near
+                        Eye of Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">216<small>m²</small></td>
+                  <td data-label="Height">8<small>m</small></td>
+                  <td data-label="Volume">13824<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7377"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7376</td>
+                  <td><a href="/parcels/7376"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.655&amp;y=19.265"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7376" class="">13 Eburonia Terrace</a></b><br><small>13 Eburonia Terrace,
+                        near Eye of Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">551<small>m²</small></td>
+                  <td data-label="Height">14<small>m</small></td>
+                  <td data-label="Volume">61712<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7376"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7375</td>
+                  <td><a href="/parcels/7375"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.655&amp;y=19.105"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7375" class="">59 Equiano Street</a></b><br><small>59 Equiano Street, near
+                        Eye of Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">377<small>m²</small></td>
+                  <td data-label="Height">9<small>m</small></td>
+                  <td data-label="Volume">27144<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7375"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7374</td>
+                  <td><a href="/parcels/7374"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59.33&amp;y=17.315"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7374" class="">19 Bran Ave</a></b><br><small>19 Bran Ave, near Eye of
+                        Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">230<small>m²</small></td>
+                  <td data-label="Height">17<small>m</small></td>
+                  <td data-label="Volume">31280<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7374"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7373</td>
+                  <td><a href="/parcels/7373"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-59&amp;y=16.645"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7373" class="">2 Caleuche Street</a></b><br><small>2 Caleuche Street, near
+                        Eye of Sauron, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">368<small>m²</small></td>
+                  <td data-label="Height">8<small>m</small></td>
+                  <td data-label="Volume">23552<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7373"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+                <tr class="asset">
+                  <td class="id" data-label="Id">7372</td>
+                  <td><a href="/parcels/7372"><img
+                        src="https://map.cryptovoxels.com/tile/parcel?x=-51.965&amp;y=22.47"></a></td>
+                  <td data-label="Name/Address">
+                    <p><b><a href="/parcels/7372" class="">3 Mimosa Street</a></b><br><small>3 Mimosa Street, near
+                        Milky Way, on island Andromeda</small></p>
+                  </td>
+                  <td data-label="Area">1014<small>m²</small></td>
+                  <td data-label="Height">14<small>m</small></td>
+                  <td data-label="Volume">113568<small>m³</small></td>
+                  <td data-label="Owner" class="owner">crvox.eth</td>
+                  <td><a class="bid" href="https://opensea.io/assets/0x79986af15539de2db9a5086382daeda917a9cf0c/7372"
+                      target="_blank">View on Opensea</a></td>
+                </tr>
+              </table>
+              <div class="Center">
+                <div class="Pagination"><a
+                    class="active">1</a><a>2</a><a>3</a><a>4</a><a>5</a><a>6</a><a>7</a><a>8</a><span>...</span><a>Next
+                    &gt; </a></div>
+              </div>
+            </div>
+          </section>
+          <aside>
+            <div>
+              <h3 style="margin-top: 0px;">Last 50 parcels transferred.</h3>
+              <p>The last transfers (either sold or transferred), <a>Click here to refresh.</a></p>
+              <div style="height: 100%; max-height: 100%; overflow: hidden auto;">
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-55.905&amp;y=18.315"><a href="/parcels/7074">13
+                    Abol Drive</a><br><br><br><span>From <a href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad"
+                      target="_blank">0xa253d7cd...</a> to <a
+                      href="/avatar/0xbbbbe84413a3e57774dec34dae6ec2a11b459f5e"
+                      target="_blank">0xbbbbe844...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-51.29&amp;y=17.02"><a href="/parcels/7327">13
+                    Peacock Road</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0x0cbfc5242cf36ca11b816f58d3110b24bd203b83"
+                      target="_blank">0x0cbfc524...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-53.675&amp;y=18.245"><a href="/parcels/7091">7
+                    Schedar Street</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0xe1c01c2923665051ba5d6f483e45d8ce516e51c2"
+                      target="_blank">0xe1c01c29...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-53.66&amp;y=18.51"><a href="/parcels/7085">3
+                    Schedar Street</a><br><br><br><span>From <a
+                      href="/avatar/0x60b1f8ba747c75aacb66f6c2bb7683211523219e" target="_blank">0x60b1f8ba...</a> to
+                    <a href="/avatar/0xbccba536deff19e79927098a0279f9089faa196d"
+                      target="_blank">0xbccba536...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.615&amp;y=18.72"><a href="/parcels/7414">3b
+                    Mastika Street</a><br><br><br><span>From <a
+                      href="/avatar/0x60b1f8ba747c75aacb66f6c2bb7683211523219e" target="_blank">0x60b1f8ba...</a> to
+                    <a href="/avatar/0xbccba536deff19e79927098a0279f9089faa196d"
+                      target="_blank">0xbccba536...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.615&amp;y=18.72"><a href="/parcels/7414">3b
+                    Mastika Street</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0x60b1f8ba747c75aacb66f6c2bb7683211523219e"
+                      target="_blank">0x60b1f8ba...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-53.66&amp;y=18.51"><a href="/parcels/7085">3
+                    Schedar Street</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0x60b1f8ba747c75aacb66f6c2bb7683211523219e"
+                      target="_blank">0x60b1f8ba...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=15.92&amp;y=10.025"><a href="/parcels/6870">2
+                    Ceylon satinwood Street</a><br><br><br><span>From <a
+                      href="/avatar/0xabb9216e5e28deba84d3154ea73942860457ecd1" target="_blank">0xabb9216e...</a> to
+                    <a href="/avatar/0x34f3605d5ac6204d241784f48d86eac27b780534"
+                      target="_blank">0x34f3605d...</a></span></div>
+                <div class="BasicParcelInfo"><img src="https://map.cryptovoxels.com/tile/parcel?x=-51.1&amp;y=18.5"><a
+                    href="/parcels/7293">3 Orbitar Drive</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0xc875295e78f772575d3a772c03cd13f6520a5913"
+                      target="_blank">0xc875295e...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.83&amp;y=18.825"><a href="/parcels/7322">13
+                    Onasilos Ave</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0x2fec5d8835b39f314187dc1da933b273f32f18c3"
+                      target="_blank">0x2fec5d88...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-51.22&amp;y=17.575"><a href="/parcels/7308">ANNO
+                    Plaza</a><br>19 Scheat Terrace, <br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0x6666dae2c6350bf8114c31e44c370328cf9e7b9b"
+                      target="_blank">0x6666dae2...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-51.22&amp;y=17.855"><a href="/parcels/7296">ANNO
+                    Plaza</a><br>17 Scheat Terrace, <br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0x6666dae2c6350bf8114c31e44c370328cf9e7b9b"
+                      target="_blank">0x6666dae2...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.77&amp;y=17.015"><a href="/parcels/7379">2
+                    Peacock Road</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0x4375cce2441bd054a11d0628420918592537dd50"
+                      target="_blank">0x4375cce2...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.335&amp;y=18.865"><a href="/parcels/7378">3
+                    Onasilos Ave</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0xf75341b90b8beb9f93c50facb92bc552f20797bb"
+                      target="_blank">0xf75341b9...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.975&amp;y=19.11"><a href="/parcels/7305">17
+                    Onasilos Ave</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0x5acfbbf0aa370f232e341bc0b1a40e996c960e07"
+                      target="_blank">0x5acfbbf0...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-52.795&amp;y=18.21"><a href="/parcels/7129">7
+                    Quijote Street</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0x30cb353847c13983d0576c04b2d5d762d813cc26"
+                      target="_blank">0x30cb3538...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.895&amp;y=17.47"><a href="/parcels/7348">2
+                    Poltergeist Road</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0x081e92f8b195999d71b8c88d042da75f8be8ed9f"
+                      target="_blank">0x081e92f8...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-55.995&amp;y=19.15"><a href="/parcels/7067">13
+                    Equiano Street</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0xd3b52a5cf36434edc77bb2bc0a4478ac8e61617a"
+                      target="_blank">0xd3b52a5c...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=6.72&amp;y=-2.965"><a href="/parcels/3542">312
+                    Neutron Tower</a><br><br><br><span>From <a
+                      href="/avatar/0x081e92f8b195999d71b8c88d042da75f8be8ed9f" target="_blank">0x081e92f8...</a> to
+                    <a href="/avatar/0x508e78de2d3e9184ba451b97ece22b67ffd5a846"
+                      target="_blank">0x508e78de...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.83&amp;y=18.635"><a href="/parcels/7326">Star
+                    Shrine</a><br>2 Orbitar Drive, <br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0xe330dc28b47d73884ad88837aecfee1f49ad7e7b"
+                      target="_blank">0xe330dc28...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-51.31&amp;y=18.235"><a href="/parcels/7278">7
+                    Scheat Terrace</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0xcd7c79616238fd3a887d21eda7e1f1c058845ef4"
+                      target="_blank">0xcd7c7961...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-51.03&amp;y=18.815"><a href="/parcels/7301">19
+                    Onasilos Ave</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0xebdab4b427a80471f245c897aefd559609824899"
+                      target="_blank">0xebdab4b4...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-15.12&amp;y=-12.345"><a
+                    href="/parcels/6720">Omnium Origin Founder Lounge</a><br>5 Arsenopyrite Ave, <br><br><span>From <a
+                      href="/avatar/0x198802a5e52b958360d1148dc6d1df0c618c1467" target="_blank">0x198802a5...</a> to
+                    <a href="/avatar/0x9798e4b5a80163d46fb2e89a4cb9835fb8491aa0"
+                      target="_blank">0x9798e4b5...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.295&amp;y=19.22"><a
+                    href="/parcels/7385">MultiNFT Center</a><br>2 Harriot Terrace, <br><br><span>From <a
+                      href="/avatar/0x231e679b29bf1659560305e801e323a6900d1492" target="_blank">0x231e679b...</a> to
+                    <a href="/avatar/0xdf02eb8bf194697df8155f2e4d03f1f8ebf64092"
+                      target="_blank">0xdf02eb8b...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.295&amp;y=19.22"><a
+                    href="/parcels/7385">MultiNFT Center</a><br>2 Harriot Terrace, <br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0x231e679b29bf1659560305e801e323a6900d1492"
+                      target="_blank">0x231e679b...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=8.225&amp;y=-1.94"><a href="/parcels/5748">5
+                    Urbino Ave</a><br><br><br><span>From <a href="/avatar/0xd4a34ccca3c82e3c30a15def646097850ec53516"
+                      target="_blank">0xd4a34ccc...</a> to <a
+                      href="/avatar/0xf8c32f3197b1fdc50d78c3ef7954afe8f9fb4610"
+                      target="_blank">0xf8c32f31...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=16.025&amp;y=11.185"><a href="/parcels/6787">World
+                    Center</a><br>13 Silene gazulensis Terrace, <br><br><span>From <a
+                      href="/avatar/0xebdab4b427a80471f245c897aefd559609824899" target="_blank">0xebdab4b4...</a> to
+                    <a href="/avatar/0xf0290cd7c1b58f056e482d76f331a6a5a767f888"
+                      target="_blank">0xf0290cd7...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.615&amp;y=18.91"><a href="/parcels/7349">7
+                    Onasilos Ave</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0x42408d90ed36a2ae50cb508bbe07ea4b95a72434"
+                      target="_blank">0x42408d90...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.885&amp;y=17.845"><a href="/parcels/7336">3
+                    Arkas Terrace</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0x8a867ff9e8123b9d44f233a21d64d3f751bdc8a6"
+                      target="_blank">0x8a867ff9...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-7.285&amp;y=7.285"><a href="/parcels/4629">San
+                    Francisco Lab</a><br>17 Divisadero Street, <br><br><span>From <a
+                      href="/avatar/0x06b3564ef920fd55f19f95eb7114eab3ee83a192" target="_blank">0x06b3564e...</a> to
+                    <a href="/avatar/0xf4ba33b5a5c063b43fc29c1ee0b11b263aed1b38"
+                      target="_blank">0xf4ba33b5...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-13.045&amp;y=-11.15"><a href="/parcels/6543">59
+                    Breithauptite Ave</a><br><br><br><span>From <a
+                      href="/avatar/0x40415c1c0e7a8ff3e184b51a94a2fc5b92df9434" target="_blank">0x40415c1c...</a> to
+                    <a href="/avatar/0x61b65163e02bce14fc4e49593e9226f8ef8a1fc4"
+                      target="_blank">0x61b65163...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-66.06&amp;y=0.555"><a href="/parcels/4807">23
+                    Jovial Place</a><br><br><br><span>From <a
+                      href="/avatar/0x13816f65ba8195768e6825eb774fd3c6a05a0ac8" target="_blank">0x13816f65...</a> to
+                    <a href="/avatar/0x15b111344ff5623c769ef80fa51e07556dcdea43"
+                      target="_blank">0x15b11134...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=15.935&amp;y=11.305"><a href="/parcels/6776">17
+                    Silene gazulensis Terrace</a><br><br><br><span>From <a
+                      href="/avatar/0x49c83c32ce6dab28e2445e7502a088b9374e8b6a" target="_blank">0x49c83c32...</a> to
+                    <a href="/avatar/0x15b111344ff5623c769ef80fa51e07556dcdea43"
+                      target="_blank">0x15b11134...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-55.655&amp;y=18.365"><a href="/parcels/7061">5
+                    Abol Drive</a><br><br><br><span>From <a href="/avatar/0x1da75fb0da32653fdab9ddecdb42f2ed61f8a28b"
+                      target="_blank">0x1da75fb0...</a> to <a
+                      href="/avatar/0x6f6c903798fcef2d7233d2f91b08965b073aa4b3"
+                      target="_blank">0x6f6c9037...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=6.255&amp;y=-3.165"><a
+                    href="/parcels/3498">African Store</a><br>10 Proton, <br><br><span>From <a
+                      href="/avatar/0xae1c671754d6d8216dbc4e8fb7a616e903048605" target="_blank">0xae1c6717...</a> to
+                    <a href="/avatar/0xff6bbe18168e431b4a5ec9051de3c00d0908162b"
+                      target="_blank">0xff6bbe18...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.295&amp;y=19.395"><a href="/parcels/7387">3
+                    Harriot Terrace</a><br><br><br><span>From <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad" target="_blank">0xa253d7cd...</a> to
+                    <a href="/avatar/0xeb7d8b23ef24aca995faef06b77b2610fa86a7f4"
+                      target="_blank">0xeb7d8b23...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.485&amp;y=19.225"><a href="/parcels/7364">2
+                    Arber Road</a><br><br><br><span>From <a href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad"
+                      target="_blank">0xa253d7cd...</a> to <a
+                      href="/avatar/0xa2eae178f372220ff6c6d8cacd63efe4e4b44525"
+                      target="_blank">0xa2eae178...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-50.79&amp;y=18.32"><a href="/parcels/7334">2
+                    Arkas Terrace</a><br><br><br><span>From <a
+                      href="/avatar/0x2cb25b2b1082d7062a4e114c3510ce274692c8ea" target="_blank">0x2cb25b2b...</a> to
+                    <a href="/avatar/0xc1efc49285eb5deda2ac887d613242475ed15048"
+                      target="_blank">0xc1efc492...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=18.375&amp;y=12.455"><a href="/parcels/7017">7
+                    Gazelle Ave</a><br><br><br><span>From <a href="/avatar/0x86e7caee4ed304b814d34b84af750b7e12b14dc6"
+                      target="_blank">0x86e7caee...</a> to <a
+                      href="/avatar/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad"
+                      target="_blank">0xa253d7cd...</a></span></div>
+                <div class="BasicParcelInfo"><img src="https://map.cryptovoxels.com/tile/parcel?x=-7.53&amp;y=3.62"><a
+                    href="/parcels/5164">67 51 Attack Street</a><br><br><br><span>From <a
+                      href="/avatar/0x13816f65ba8195768e6825eb774fd3c6a05a0ac8" target="_blank">0x13816f65...</a> to
+                    <a href="/avatar/0xb549db970e9569e098815d277eedabb0a6ca03b1"
+                      target="_blank">0xb549db97...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=11.66&amp;y=-8.645"><a
+                    href="/parcels/6394">Designed Showroom</a><br>17 Makuakane Drive, <br><br><span>From <a
+                      href="/avatar/0x0bd185d3d06d1996362aaa4dd2ca8d5b6c4b7b0d" target="_blank">0x0bd185d3...</a> to
+                    <a href="/avatar/0x8627511d4fbf0c84038d8c5d8aa7c6f4991ab301"
+                      target="_blank">0x8627511d...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-51.15&amp;y=17.295"><a href="/parcels/7329">7
+                    Peacock Road</a><br><br><br><span>From <a
+                      href="/avatar/0x42408d90ed36a2ae50cb508bbe07ea4b95a72434" target="_blank">0x42408d90...</a> to
+                    <a href="/avatar/0x4aeea6ff8ccd4e3de20954fee3209d51c1401f89"
+                      target="_blank">0x4aeea6ff...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=18.21&amp;y=12.585"><a href="/parcels/7019">3
+                    Pastilla dacuna Road</a><br><br><br><span>From <a
+                      href="/avatar/0x0cbfc5242cf36ca11b816f58d3110b24bd203b83" target="_blank">0x0cbfc524...</a> to
+                    <a href="/avatar/0x3d1163e402ec0c0f58297e1e88bd992b729ee520"
+                      target="_blank">0x3d1163e4...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=-8.12&amp;y=1.235"><a href="/parcels/5996">5
+                    약령중앙로</a><br><br><br><span>From <a href="/avatar/0x5d8c0e452811767c9a3abe3a90dcd6496b3dc0c1"
+                      target="_blank">0x5d8c0e45...</a> to <a
+                      href="/avatar/0xb5e8b254159892a3eca38d872621d9ca0c828cf6"
+                      target="_blank">0xb5e8b254...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=17.5&amp;y=11.435"><a href="/parcels/6908">Shadow
+                    Monkey Cabal</a><br>3 Tuna Terrace, <br><br><span>From <a
+                      href="/avatar/0x18d2b9b37b576b8f1a04d7d909c2efc991bcf52e" target="_blank">0x18d2b9b3...</a> to
+                    <a href="/avatar/0x74442f7a368f75aa6e1e8e3ef42fc9c672a0f39a"
+                      target="_blank">0x74442f7a...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=18.21&amp;y=12.585"><a href="/parcels/7025">原住民
+                    Loft</a><br>3b Pastilla dacuna Road, <br><br><span>From <a
+                      href="/avatar/0x0cbfc5242cf36ca11b816f58d3110b24bd203b83" target="_blank">0x0cbfc524...</a> to
+                    <a href="/avatar/0x3d1163e402ec0c0f58297e1e88bd992b729ee520"
+                      target="_blank">0x3d1163e4...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=15.79&amp;y=10.305"><a
+                    href="/parcels/6818">Designed Gallery</a><br>43 Bermuda cedar Street, <br>Sold for 1.89
+                  ETH<br><span>From <a href="/avatar/0x8627511d4fbf0c84038d8c5d8aa7c6f4991ab301"
+                      target="_blank">0x8627511d...</a> to <a
+                      href="/avatar/0xa5825ddbdf0bef39587dde762f9722895a8bf467"
+                      target="_blank">0xa5825ddb...</a></span></div>
+                <div class="BasicParcelInfo"><img src="https://map.cryptovoxels.com/tile/parcel?x=18.1&amp;y=10.48"><a
+                    href="/parcels/6976">PlayerOne Space</a><br>5 Walia Ibex Street, <br><br><span>From <a
+                      href="/avatar/0x340798539bada9b832e8231f195294d62ef863fe" target="_blank">0x34079853...</a> to
+                    <a href="/avatar/0x0d7cafdab2ac8c5417c8782ae6219ce06b8673f5"
+                      target="_blank">0x0d7cafda...</a></span></div>
+                <div class="BasicParcelInfo"><img src="https://map.cryptovoxels.com/tile/parcel?x=7.855&amp;y=5.46"><a
+                    href="/parcels/4385">drknss HQ</a><br>2 Via Lambro, <br><br><span>From <a
+                      href="/avatar/0xfb7affcd4e05eb7f63f5b120ed02da01f15fa59f" target="_blank">0xfb7affcd...</a> to
+                    <a href="/avatar/0x289314cd8d5147e32ce3f32fd030467df92d57a7"
+                      target="_blank">0x289314cd...</a></span></div>
+                <div class="BasicParcelInfo"><img
+                    src="https://map.cryptovoxels.com/tile/parcel?x=17.405&amp;y=10.385"><a href="/parcels/6984">5
+                    Banded Iguana Street</a><br><br><br><span>From <a
+                      href="/avatar/0x340798539bada9b832e8231f195294d62ef863fe" target="_blank">0x34079853...</a> to
+                    <a href="/avatar/0xe83335597ebd1e4454093575fb4e6017a803ba4d"
+                      target="_blank">0xe8333559...</a></span></div>
+              </div>
+            </div>
+          </aside>
+        </section>
+      </div>
+      <div style="height: 50px;"></div>
+      <footer>
+        <p class="footer-links"><a href="/about">About</a> | <a href="https://wiki.cryptovoxels.com/"
+            target="_blank">Wiki</a> | <a href="https://trello.com/b/0eMw7Y5p/cryptovoxels-roadmap-2022"
+            target="_blank">Roadmap</a>| <a href="/press">Press and Team</a> | <a
+            href="https://offsetra.com/profile/cryptovoxels" target="_blank">Carbon offset</a></p>
+        <p>Cryptovoxels V.19263</p>
+        <p>© Nolan Consulting Limited - Building Virtual Worlds</p>
+        <p><a href="/terms">Terms of use</a> | <a href="/privacy">Privacy Policy</a> | <a href="/conduct">Code of
+            Conduct</a></p>
+      </footer>
+    </section>
+  </div>
+</body>
+
+<script src="js/babylon.js"></script>
+<script async src="js/leaflet.js"></script>
+<script async src="js/babylon.gui.min.js"></script>
+<script async src="js/babylonjs.materials.min.js"></script>
+<script async src="js/babylonjs.loaders.min.js"></script>
+<script src="js/web-18510.js"></script>
+<script async src="torus-embed"></script>
+
+<script src="js/script.js" data-site="AGDDHJCW" data-spa="auto"></script>
+
+<!-- javascript for automatic buy modal -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11" async></script>
+
+<script src="/js/main.js"></script>
+
+</html>
