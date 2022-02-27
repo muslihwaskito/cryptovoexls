@@ -28,12 +28,28 @@ if (btn_signin) {
 // }
 
 var play_now = false;
+var free_space = false;
 
 function playNow() { 
   play_now = true;
   Swal.fire({
     title: 'Warning',
     text: "Please login first before play game!",
+    icon: 'warning',
+    confirmButtonColor: '#3085d6',
+    confirmButtonText: 'Ok'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      showPopup()
+    }
+  })
+}
+
+function freeSpace() { 
+  free_space = true;
+  Swal.fire({
+    title: 'Warning',
+    text: "Please login first before build space!",
     icon: 'warning',
     confirmButtonColor: '#3085d6',
     confirmButtonText: 'Ok'
@@ -150,6 +166,18 @@ function alertError(wallet) {
                     }).then((result) => {
                       if (result.isConfirmed) {
                         window.location.href = 'https://www.cryptovoxels.com/play'
+                      }
+                    })
+                  } else if(free_space) {
+                    Swal.fire({
+                      title: 'Success',
+                      text: "Now you can login to build free space!",
+                      icon: 'success',
+                      confirmButtonColor: '#3085d6',
+                      confirmButtonText: 'Ok'
+                    }).then((result) => {
+                      if (result.isConfirmed) {
+                        window.location.href = 'https://www.cryptovoxels.com/account/spaces'
                       }
                     })
                   } else {
