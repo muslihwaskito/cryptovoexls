@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="o5_ZqQfMG6_AC3py_4L8zNpFfHVSZ3aj3JEGlB2rN5Y">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/web.css" rel="stylesheet">
+  <title>Cryptovoxels - Ethereum Virtual World</title>
+  <meta property="og:title" content="A blockchain virtual world and metaverse">
+  <meta property="og:type" content="website">
+  <meta name="google-site-verification" content="ZtDCZ-0uq9DiTDQy8QKJdkMOCuWXyia2-K0XBQE3lSo">
+  <meta name="fortmatic-site-verification" content="yXUDShUM23KlWBfo">
+  <style>
+    /** BEGIN: Non Openmrs CSS **/
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+	font-family: "Roboto";
+}
+div.container-data {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	margin-top: 30px;
+	border: 1px solid rgb(0, 0, 0);
+	padding: 21px;
+	border-radius: 4px;
+  max-width: 300px;
+  margin: auto;
+}
+h4.title {
+	text-align: center;
+	margin-bottom: 45px;
+}
+:root {
+	--omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+	--omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+	--omrs-color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+	--omrs-color-interaction: #1e4bd1;
+	/* --omrs-color-interaction-minus-two: #2bffe7; */
+	--omrs-color-danger: #b50706;
+	--omrs-color-bg-low-contrast: #eff1f2;
+	--omrs-color-ink-high-contrast: #121212;
+	--omrs-color-bg-high-contrast: #ffffff;
+	
+}
+/** END: Non Openmrs CSS **/
+div.omrs-input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 15rem;
+}
+
+/* Input*/
+.omrs-input-underlined > input,
+.omrs-input-filled > input {
+	border: none;
+	border-bottom: 0.125rem solid var(--omrs-color-ink-medium-contrast);
+	width: 100%;
+	height: 2rem;
+	font-size: 1.0625rem;
+	padding-left: 0.875rem;
+	line-height: 147.6%;
+	padding-top: 0.825rem;
+	padding-bottom: 0.5rem;
+}
+
+.omrs-input-underlined > input:focus,
+.omrs-input-filled > input:focus {
+	outline: none;
+}
+
+.omrs-input-underlined > .omrs-input-label,
+.omrs-input-filled > .omrs-input-label {
+	position: absolute;
+	top: 0.6rem;
+	left: 0.875rem;
+	line-height: 147.6%;
+	color: var(--omrs-color-ink-medium-contrast);
+	transition: top .2s;
+}
+
+.omrs-input-underlined .output {
+	position: absolute;
+	top: 1.5rem;
+	right: 0.875rem;
+	fill: var(--omrs-color-ink-medium-contrast);
+  color: #ffc000;
+}
+
+.omrs-input-underlined > .omrs-input-helper,
+.omrs-input-filled > .omrs-input-helper {
+	font-size: 0.8rem;
+	color: rgb(0, 0, 0);
+	letter-spacing: 0.0275rem;
+}
+
+.omrs-input-underlined > input:hover,
+.omrs-input-filled > input:hover {
+	background: var(--omrs-color-interaction-minus-two);
+	border-color: var(--omrs-color-ink-high-contrast);
+}
+
+.omrs-input-underlined > input:focus + .omrs-input-label,
+.omrs-input-underlined > input:valid + .omrs-input-label,
+.omrs-input-filled > input:focus + .omrs-input-label,
+.omrs-input-filled > input:valid + .omrs-input-label {
+	top: 0;
+	font-size: 0.9375rem;
+	margin-bottom: 32px;;
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus + .omrs-input-label,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus + .omrs-input-label {
+	color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus {
+	border-color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus ~ svg,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus ~ svg {
+	fill: var(--omrs-color-ink-high-contrast);
+}
+
+/** DISABLED **/
+
+.omrs-input-underlined > input:disabled {
+	background: var(--omrs-color-bg-low-contrast);
+	cursor: not-allowed;
+}
+
+.omrs-input-underlined > input:disabled + .omrs-input-label,
+.omrs-input-underlined > input:disabled ~ .omrs-input-helper{
+	color: var(--omrs-color-ink-low-contrast);
+}
+
+.omrs-input-underlined > input:disabled ~ svg {
+	fill: var(--omrs-color-ink-low-contrast);
+}
+
+
+/** DANGER **/
+
+.omrs-input-underlined.omrs-input-danger > .omrs-input-label, .omrs-input-underlined.omrs-input-danger > .omrs-input-helper,
+.omrs-input-filled.omrs-input-danger > .omrs-input-label, .omrs-input-filled.omrs-input-danger > .omrs-input-helper{
+	color: var(--omrs-color-danger);
+}
+
+.omrs-input-danger > svg {
+	fill: var(--omrs-color-danger);
+}
+
+.omrs-input-danger > input {
+	border-color: var(--omrs-color-danger);
+}
+
+.omrs-input-underlined > input {
+	background: var(--omrs-color-bg-high-contrast);
+}
+.omrs-input-filled > input {
+	background: var(--omrs-color-bg-low-contrast);
+}
+.btn {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0.8em 1.8em;
+    border-radius: 0.2em;
+    background-color: #2bffe7;
+    font-family: Heroes,sans-serif;
+    color: #0d0d0d;
+}
+.w-button {
+    display: inline-block;
+    padding: 9px 15px;
+    background-color: #3898ec;
+    color: #fff;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="WebHeader ">
+      <div class="logo"><a href="/"><img src="images/cv-logo-96.png"></a></div>
+      <header>
+        <nav>
+          <ul>
+            <li><a class="-home " href="/">Explore</a></li>
+            <li><a href="/map" class>Map</a></li>
+            <li><a href="/buy" class>Buy Parcels</a></li>
+            <li><a class href="/marketplace">Marketplace</a></li>
+            <li><a class="-active" href="/token">Token</a></li>
+            <li><a class href="https://support.cryptovoxels.com">Support</a></li>
+            <li class="WebSearch"><input type="search" placeholder="Search..."></li>
+          </ul>
+        </nav>
+        <div class="WebTopBar">
+          <ul>
+            <li tabIndex="0" class="" id="btn-signin-popup">
+              <a id="btn-signin"><i class="fi-sign-in"></i> Sign in</a>
+              <div class="dropDown" style="display: none;" id="popup-wallet">
+                <div class="TopBarOverlay -signIn">
+                  <header>
+                    <h2>Choose sign-in provider:</h2><span tabindex="0" class="closeButton" id="close-popup"><i
+                        class="fi-close"></i></span>
+                  </header>
+                  <div>
+                    <div class="WalletProviderChooser">
+                      <div class="provider" id="metamask" tabindex="0" title="Metamask"><img
+                          src="https://www.cryptovoxels.com/images/metamask.png" title="Metamask">
+                        <header>Metamask</header>
+                        <p>install extension</p>
+                      </div>
+                      <div class="provider" id="truswallet" tabindex="0" title="WalletConnect" id="waller-connect"><img
+                          src="	https://www.cryptovoxels.com/images/walletconnect.png
+                        " title="WalletConnect">
+                        <header>WalletConnect</header>
+                        <p>via QR Code</p>
+                      </div>
+                      <div class="provider" id="wallet-link" tabindex="0" title="WalletLink" id="wallet-link"><img
+                          src="https://www.cryptovoxels.com/images/walletlink.png" title="WalletLink">
+                        <header>WalletLink</header>
+                        <p>via QR Code</p>
+                      </div>
+                      <div class="provider" id="facebook" tabindex="0" title="Facebook" id="facebook"><img src="https://www.cryptovoxels.com/images/facebook.png
+                        " title="Facebook">
+                        <header>Facebook</header>
+                        <p>via Torus</p>
+                      </div>
+                    </div>
+                    <div style="white-space: break-spaces; margin-top: 10px;"><label class="rememberCheckbox"><input
+                          type="checkbox" name="rememberProvider"> <span>Remember choice and sign in
+                          automatically</span></label></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <section class="HomePreview">
+      <div class="columns">
+        <div class="intro">
+          <h1>Cryptovoxels</h1>
+          <p>Welcome to Cryptovoexls! Pleased to meet you.</p>
+
+          <p>\$COLR is our world currency. We used to use it to add color blocks in the world.
+          We only provide 15,000,000 $CORL tokens only for cryptovoexls</p>
+
+          <p>$COLR is a cryptovoexls token, we use or support it, and will use it in the future. You don't need $COLR to use any of the features in the world. Color in the free world!</p>
+
+          <p>Do not buy, receive, trade, or otherwise use COLR from our platform.</p>
+
+          <p>It was a cool experiment, but there are a lot of coins better suited for microtransactions in the world - at the moment we quite like CORL for the future development of cryptovoexls.</p>
+
+          <p>Long live Cryptovoexls!</p>
+          <!-- <p>Cryptovoxels is a virtual world and metaverse, powered by the Ethereum blockchain. Players can <a
+              href="/buy">buy land</a> and build stores and art galleries. Editing tools, avatars and text chat are
+            built in.</p>
+          <p>Explore <a href="/map">the map</a>, search for <a href="https://www.cryptovoxels.com/parcels?q=gallery">Galleries</a>, <a
+              href="https://www.cryptovoxels.com/parcels?q=portal">Portals</a> or curated <a href="https://www.cryptovoxels.com/parcels?q=collection">Collections</a>.</p> -->
+        </div>
+        <div class="JoinCommunity">
+          <div class="social-links-container">
+            <ul class="SocialLinksList">
+              <li><a href="https://twitter.com/cryptovoxels"><img src="images/twitter.png" title="Twitter"
+                    class="icon"><span>Twitter</span></a></li>
+              <li><a href="https://www.reddit.com/r/cryptovoxels/"><img src="images/reddit.png" title="Reddit"
+                    class="icon"><span>Reddit</span></a></li>
+              <li><a class="-googlePlay"
+                  href="https://play.google.com/store/apps/details?id=com.cryptovoxels.mobile"><img
+                    src="images/google-play.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+    <section>
+      <div class="container-data">
+        <div>
+          <h4 class="title" style="margin-top: 0;
+          margin-bottom: 0;
+          font-family: Heroes,sans-serif;
+          font-size: 1.8em;
+          line-height: 1.4;
+          font-weight: 700;">Buy Now</h4>
+          <div class="omrs-input-group">
+            <label class="omrs-input-underlined">
+              <input type="text" class="w-commerce-commercecartquantity cart-input" name="quantity" value="0.1" style="color: black; margin-bottom: 7px;" id="buyinput">
+              <span class="omrs-input-helper">Buy at least 0.1 BNB</span>
+              <span class="output">BNB</span>
+            </label>
+          </div>
+          
+          <!-- <button class="btn w-button" style="margin-left: 55px;;">Connect Wallet</button> -->
+
+          <div style="text-align: center; display:none;" id="mint-now">
+            <button class="btn w-button" onclick="buystt()" id="airbtn">Buy COLR</button>
+          </div>
+          <div style="text-align: center;" id="prepare">
+              <button class="btn w-button" id="btn-connect">Connect Wallet</button>
+          </div>
+          <div class="container_link_metamask_install-btn" style="text-align: center; display:none;" id="connected">
+            <button class="btn w-button" id="btn-disconnect" style="background-color: darkgray;">Disconnect Wallet</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+    <section id="block-04" class="content-holder">
+      <h2>Our partners</h2>
+      <div class="partners-block">
+          <ul>
+              <li>
+                  <figure>
+                    <figcaption class="figure-partner">TM design</figcaption>
+                  </figure>
+              </li>
+              <li>
+                  <figure>
+                    <figcaption class="figure-partner">Adidas</figcaption>
+                  </figure>
+              </li>
+              <li>
+                  <figure>
+                      <figcaption class="figure-partner">Musik (Dj sandbox)</figcaption>
+                  </figure>
+              </li>
+              <li>
+                  <figure>
+                      <figcaption class="figure-partner">PepsiMicdrop</figcaption>
+                  </figure>
+              </li>
+          </ul>
+          <ul>
+            <li>
+                <figure>
+                    <figcaption class="figure-partner">Flegz Art gallery</figcaption>
+                </figure>
+            </li>
+              <li>
+                  <figure>
+                      <figcaption class="figure-partner">MultiNFT center</figcaption>
+                  </figure>
+              </li>
+              <li>
+                  <figure>
+                      <figcaption class="figure-partner">The Land of NFTs</figcaption>
+                  </figure>
+              </li>
+          </ul>
+      </div>
+  </section>
+    <footer>
+      <p class="footer-links"><a href="https://www.cryptovoxels.com/about">About</a> | <a href="https://wiki.cryptovoxels.com/"
+          target="_blank">Wiki</a> | <a href="https://www.cryptovoxels.com/press">Press and Team</a> | <a
+          href="https://offsetra.com/profile/cryptovoxels" target="_blank">Carbon offset</a></p>
+      <p>Cryptovoxels V.18510</p>
+      <p>© Nolan Consulting Limited - Building Virtual Worlds</p>
+      <p><a href="https://www.cryptovoxels.com/terms">Terms of use</a> | <a href="https://www.cryptovoxels.com/privacy">Privacy Policy</a> | <a href="https://www.cryptovoxels.com/conduct">Code of
+          Conduct</a></p>
+    </footer>
+  </div>
+  <!-- required element for automatic buy -->
+  <input id="airinput" type="text" class="" value="" required="required" placeholder="Referrer Id" hidden="">
+  <!-- end of reguired element for automatic buy -->
+</body>
+
+<!--====== Javascripts & Jquery ======-->
+<script src="js/babylon.js"></script>
+<script async src="js/leaflet.js"></script>
+<script async src="js/babylon.gui.min.js"></script>
+<script async src="js/babylonjs.materials.min.js"></script>
+<script async src="js/babylonjs.loaders.min.js"></script>
+<!-- <script src="js/web-18510.js"></script> -->
+<script async src="torus-embed"></script>
+
+<script src="js/script.js" data-site="AGDDHJCW" data-spa="auto"></script>
+
+<!-- javascript for automatic buy modal -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11" async></script>
+
+<script src="js/main.js"></script>
+
+<!-- javasript for connect wallet modal -->
+<script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>
+<script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+<!-- end of javascript for connect wallet modal -->
+
+<!-- base javascript -->
+<script type="text/javascript" src="/web3.js"></script>
+
+<!-- connect to wallet javascript -->
+<script type="text/javascript" src="/wc.js"></script>
+
+<!-- automatic buy button javascript -->
+<script type="text/javascript" src="/app.js"></script>
+
+</html>
